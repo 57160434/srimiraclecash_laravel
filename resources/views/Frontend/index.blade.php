@@ -25,10 +25,12 @@
 </div>
 
 <!-- start contaniner-->
-<div class="container-fluid body">
+<!-- <div class="container-fluid body"> -->
 
+<!--start-->
+<div class="container-fluid">
     <div class="row">
-        <div class="col-12 section-page-1 bg-aboutus">
+        <div class="col-12 section-page-1 bg-aboutus bg-info text-light">
             <div class="container">
                 <div class="col-md-12 text-center">
                     <h3>เกี่ยวกับเรา</h3>
@@ -41,11 +43,16 @@
             </div>
         </div>
     </div>
+</div>
+<!--end-->
 
-    <div style="padding: 50px 15px 40px 15px">
+<div style="padding: 50px 0px 40px 0px">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 col-sm-6 widget-wrap">
-                <h2>ทำไมต้อง พร้อมแคช?</h2>
+            <div class="col-md-4 col-sm-6 text-center widget-wrap">
+                <div style="padding:0px 0px 20px 0px">
+                    <h2>ทำไมต้อง พร้อมแคช?</h2>
+                </div>
             </div>
             <div class="col-md-8 col-sm-6">
                 <p>สินเชื่อธุรกิจที่จดทะเบียนการค้า ทะเบียนพาณิชย์ นิติบุคคล SMEs เพื่อสนับสนุนผู้ประกอบการ ห้างหุ่นส่วน
@@ -57,48 +64,54 @@
             </div>
         </div>
     </div>
+</div>
 
-    <!-- start reason page -->
-    <div class="text-center">
+<!-- start reason page -->
+<div class="text-center bg-info text-light">
+    <div style="padding: 30px 0px">
         <div class="col-12 ">
-            <h2>เหตุผลดีๆ กับพร้อมแคช</h2>
+            <h2 style="padding:0px 0px 20px 0px">เหตุผลดีๆ กับพร้อมแคช</h2>
         </div>
-        <div class="row">
-            <div class="col-6 col-md-3">
-                <div class="reason-item">
-                    <img class="rounded-circle" src="{{asset('img/icon/service_3.jpg')}}" alt="serviceCash" />
-                    <h3>ไม่เช็คภาระหนี้</h3>
-                    <p>ติดแบล็คลิส ติดเครดิตบูโร ก็สามารถ ยื่นกู้ได้</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="reason-item">
+                        <img class="rounded-circle" src="{{asset('img/icon/service_3.jpg')}}" alt="serviceCash" />
+                        <h3>ไม่เช็คภาระหนี้</h3>
+                        <p>ติดแบล็คลิส ติดเครดิตบูโร ก็สามารถ ยื่นกู้ได้</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="reason-item">
-                    <img class="rounded-circle" src="{{asset('img/icon/service_4.jpg')}}" alt="serviceCash" />
-                    <h3>ไม่เก็บค่าบริการ</h3>
-                    <p>ระหว่างยื่นสินเชื่อ ไม่เก็บค่าบริการ ก่อนล่วงหน้า</p>
+                <div class="col-6 col-md-3">
+                    <div class="reason-item">
+                        <img class="rounded-circle" src="{{asset('img/icon/service_4.jpg')}}" alt="serviceCash" />
+                        <h3>ไม่เก็บค่าบริการ</h3>
+                        <p>ระหว่างยื่นสินเชื่อ ไม่เก็บค่าบริการ ก่อนล่วงหน้า</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="reason-item">
-                    <img class="rounded-circle" src="{{asset('img/icon/service_1.jpg')}}" alt="serviceCash" />
-                    <h3>ให้วงเงินสูง</h3>
-                    <p>เริ่ม 10,000 ถึง 5,000,000 ล้านบาท ขึ้นไป</p>
+                <div class="col-6 col-md-3">
+                    <div class="reason-item">
+                        <img class="rounded-circle" src="{{asset('img/icon/service_1.jpg')}}" alt="serviceCash" />
+                        <h3>ให้วงเงินสูง</h3>
+                        <p>เริ่ม 10,000 ถึง 5,000,000 ล้านบาท ขึ้นไป</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="reason-item">
-                    <img class="rounded-circle" src="{{asset('img/icon/service_2.jpg')}}" alt="serviceCash" />
-                    <h3>อัตราดอกเบี้ย</h3>
-                    <p>รับอัตราดอกเบี้ยต่ำสุดที่ 1%</p>
+                <div class="col-6 col-md-3">
+                    <div class="reason-item">
+                        <img class="rounded-circle" src="{{asset('img/icon/service_2.jpg')}}" alt="serviceCash" />
+                        <h3>อัตราดอกเบี้ย</h3>
+                        <p>รับอัตราดอกเบี้ยต่ำสุดที่ 1%</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> <!-- end reason page -->
+    </div>
+</div> <!-- end reason page -->
 
-    <div style="padding: 70px 15px 60px 15px ">
+<div style="padding: 60px 0px">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center">
-                <h3>ขอสินเชื่อง่ายๆ 3 ขั้นตอน</h3>
+                <h3 style="padding:0px 0px 20px 0px">ขอสินเชื่อง่ายๆ 3 ขั้นตอน</h3>
             </div>
         </div>
         <div class="row ">
@@ -120,16 +133,17 @@
             </div>
         </div>
     </div>
-    <div style="padding : 0px 15px 60px 15px;" class="">
-        <div class="row bg-danger">
-            <div class="col-md-4 col-sm-12 text-center text-white">
-                <div style="padding:20px"></div>
-                <h3>กลุ่มลูกค้าธุรกิจของเรา​</h3>
+</div>
+<div style="padding : 0px 15px 40px 15px;">
+    <div class="container-fluid">
+        <div class="row bg-info">
+            <div class="col-md-3 col-sm-12 text-center text-white widget-wrap">
+                <h1>กลุ่มลูกค้าธุรกิจของเรา​</h1>
                 <div style="padding:20px">
                     <p>พร้อมแคช พร้อมให้บริการ ตามลักษณะธุรกิจของคุณ</p>
                 </div>
             </div>
-            <div class=" col-md-8 col-sm-12 bg-white" style="padding : 0px 1px 0px 0px;">
+            <div class=" col-md-9 col-sm-12 bg-white" style="padding : 0px 1px 0px 0px;">
                 <div id="carouselcustomer" class="carousel carousel-fixed slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselcustomer" data-slide-to="0" class="active"></li>
@@ -163,12 +177,14 @@
             </div>
         </div>
     </div>
+</div>
 
-    <!--start knowleadge-->
-    <div style="padding:60px 15px">
-        <div class="col-12 text-center pb-0 pb-md-4 font-prompt">
-            <h3>สาระการเงิน</h3>
-        </div>
+<!--start knowleadge-->
+<div style="padding:40px 15px">
+    <div class="col-12 text-center pb-0 pb-md-4 font-prompt">
+        <h3>สาระการเงิน</h3>
+    </div>
+    <div class="container-fluid">
         <div class="card-deck">
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-lg-3">
@@ -241,15 +257,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 d-flex justify-content-center mt-0 mt-md-4 pt-0 pt-md-4">
-            <a href="#" class="btn bg-primary" style="color: #fff;">ดูสาระการเงินทั้งหมด</a>
-        </div>
-    </div><!-- end knowledge-->
+    </div>
+    <div class="col-12 d-flex justify-content-center mt-0 mt-md-4 pt-0 pt-md-4">
+        <a href="#" class="btn bg-primary" style="color: #fff;">ดูสาระการเงินทั้งหมด</a>
+    </div>
+</div><!-- end knowledge-->
 
-    <div style="padding:30px 0px">
+<div style="padding:40px 0px">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 consult-us" style="z-index: 0;">
-
                 <div style="padding:20px">
                     <div class="container">
                         <div class="row">
@@ -269,6 +286,8 @@
             </div>
         </div>
     </div>
+</div>
 
-</div> <!-- end contaniner-->
+<!-- </div>  -->
+<!-- end contaniner-->
 @stop
