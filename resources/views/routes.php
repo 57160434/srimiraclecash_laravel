@@ -24,3 +24,4 @@ Route::get('/contact', function()
 {
    return View::make('Frontend.Contact.contact');
 });
+

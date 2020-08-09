@@ -222,3 +222,17 @@ a.article, a.article:hover {
     }
 
 }
+@media (max-width:600px) {
+    .custom_seachbar_responsive {
+        text-align: left !important;
+    }
+}
+@media (max-width: 600px) {
+.custom_responsive  {
+    display: block;
+    width: 100% ;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+    }
+}

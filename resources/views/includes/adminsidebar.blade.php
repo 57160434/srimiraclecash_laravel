@@ -23,10 +23,10 @@
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Knowledge</a>
             <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
-                    <a href="#">Knowledge create</a>
+                    <a href="{{url('admin/knowleadge/create')}}">Knowledge create</a>
                 </li>
                 <li>
-                    <a href="#">Knowledge listing</a>
+                    <a href="{{url('admin/knowleadge/listing')}}">Knowledge listing</a>
                 </li>
             </ul>
         </li>

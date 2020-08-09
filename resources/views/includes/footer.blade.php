@@ -150,7 +150,7 @@
 <div class="container-fluid d-md-none d-block py-2 fixed-bottom shadow-lg  bg-info" >
     <div class="row text-center">
         <div class="col-3">
-            <a href="tel:093 494 1445" style="font-size: 12px; color: #000;"><img class="rounded-circle"
+            <a href="tel:080 494 1445" style="font-size: 12px; color: #000;"><img class="rounded-circle"
                     src="{{asset('img/icon/tel.png')}}" style="width: 40px; border: 2px solid #fff;" alt=""></a>
         </div>
         <div class="col-3">

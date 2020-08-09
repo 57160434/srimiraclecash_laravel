@@ -178,3 +178,8 @@
     height: auto;
     
   }
+  @media (min-width: 1200px) {
+  ._mb-60 {
+    margin-bottom: 60px !important;
+  }
+}

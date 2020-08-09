@@ -1,6 +1,9 @@
 @extends('layouts.default')
 @section('content')
-<div style="padding:100px 0px 50px">
+<div style="padding:100px 0px 100px">
+    <div style="padding:0px 0px 40px">
+        <img class="img-fluid" src="{{asset('img/banner/srimiracle_banner.png')}}" />
+    </div>
     <div class="container">
         <div class="row _mb-60">
             <div class="col-12"></div>
@@ -164,34 +167,32 @@
 
                     <div class="col-12 mt-4">
                         <p class="mb-2 text-white" style="font-size: 16px;">
-                            <a href="tel:093 494 1445" class="text-white">
+                            <a href="tel:080 280 8185" class="text-white">
                                 <img src="{{asset('img/icon/tel.png')}}" class="rounded-circle"
-                                    style="width: 24px; border: 2px solid #fff;" alt=""> : 093 494 1445
+                                    style="width: 24px; border: 2px solid #fff;" alt=""> : 080 280 8185
                             </a>
                         </p>
                         <p class="mb-2 text-white" style="font-size: 16px;">
-                            <a href="mailto:wong.cash99@gmail.com" class="text-white">
+                            <a href="mailto:srimiraclecash99@gmail.com" class="text-white">
                                 <img src="{{asset('img/icon/email.png')}}" class="rounded-circle"
-                                    style="width: 24px; border: 2px solid #fff;" alt=""> : wong.cash99@gmail.com
+                                    style="width: 24px; border: 2px solid #fff;" alt=""> : srimiraclecash99@gmail.com
                             </a>
                         </p>
                         <p class="mb-2 text-white" style="font-size: 16px;">
-                            <a class="text-white" href="http://line.me/ti/p/~0934941445" target="_blank">
+                            <a class="text-white" href="http://line.me/ti/p/~srimiraclecashservice" target="_blank">
                                 <img src="{{asset('img/icon/line.png')}}" class="rounded-circle"
-                                    style="width: 24px; border: 2px solid #fff;" alt=""> : 0934941445
+                                    style="width: 24px; border: 2px solid #fff;" alt=""> : srimiraclecashservice
                             </a>
                         </p>
                         <p class="mb-2 text-white" style="font-size: 16px;">
-                            <a href="https://www.facebook.com/thanetcash99" target="_blank" class="text-white">
+                            <a href="https://www.facebook.com/srimiraclecash" target="_blank" class="text-white">
                                 <img src="{{asset('img/icon/facebook.png')}}" class="rounded-circle"
-                                    style="width: 24px; border: 2px solid #fff;" alt=""> : thanetcash99
+                                    style="width: 24px; border: 2px solid #fff;" alt=""> : srimiraclecash
                             </a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div style="padding:40px" class="d-none d-sm-block"></div> -->
     </div>
-</div>
-@stop
+    @stop
