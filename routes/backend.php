@@ -10,6 +10,7 @@ Route::post('/checklogin', 'BackController@checklogin');
 Route::get('/home', 'BackController@successlogin');
 Route::get('/logout', 'BackController@logout');
 
-Route::get('/knowleadge/listing','KnowleadgeController@listing');
-Route::get('/knowleadge/create','KnowleadgeController@create');
-Route::get('/knowleadge/edit','KnowleadgeController@edit');
+Route::get('/knowledge/listing','KnowledgeController@listing');
+// Route::resource('/knowledge/listing','KnowledgeController');
+Route::get('/knowledge/create','KnowledgeController@create');
+Route::get('/knowledge/edit','KnowledgeController@edit');

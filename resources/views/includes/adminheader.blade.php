@@ -6,17 +6,27 @@
             <span></span>
             <span></span>
         </button>
-        <button class="btn btn-light d-inline-block d-lg-none ml-auto" type="button" data-toggle="dropdown"
+        <!-- <button class="btn btn-light d-inline-block d-lg-none ml-auto" type="button" data-toggle="dropdown"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <i>admin</i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button> -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-light" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Admin<i class="fas fa-chevron-down pl-1"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Change password</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{{url('admin/logout')}}">Logout</a>
+            </div>
+        </div>
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-black d-none d-md-block" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" href="#">admin</a>
+                    <a class="nav-link text-black d-none d-md-block" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">admin</a>
                     <div class="dropdown-menu dropdown-menu-right bg-light" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Change password</a>
                         <div class="dropdown-divider"></div>
@@ -24,6 +34,6 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </nav>

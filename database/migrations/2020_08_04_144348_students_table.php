@@ -19,8 +19,8 @@ class StudentsTable extends Migration
             $table->string('lname');
             $table->string('email');
             $table->string('password');
-            $table->timestamp('knowleadge_created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('knowleadge_updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+            $table->timestamp('knowledge_created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('knowledge_updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
             // $table->timestamps()
         });
     }

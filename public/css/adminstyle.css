@@ -236,3 +236,8 @@ a.article, a.article:hover {
     /* -ms-overflow-style: -ms-autohiding-scrollbar; */
     }
 }
+
+.float-right {
+    float: right !important;
+    margin-top: 10px;
+}
