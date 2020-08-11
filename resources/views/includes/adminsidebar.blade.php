@@ -1,7 +1,7 @@
 <!-- Sidebar Holder -->
 <nav id="sidebar">
     <div class="sidebar-header">
-        <h3>Srimiraclecash</h3>
+        <a href="{{url('/')}}"><h3>Srimiraclecash</h3></a>
     </div>
 
     <ul class="list-unstyled components">
@@ -31,7 +31,7 @@
             </ul>
         </li>
         <li>
-            <a href="#">SEO</a>
+            <a href="{{url('admin/seo')}}">SEO</a>
         </li>
     </ul>
 </nav>

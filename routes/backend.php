@@ -14,3 +14,5 @@ Route::get('/knowledge/listing','KnowledgeController@listing');
 // Route::resource('/knowledge/listing','KnowledgeController');
 Route::get('/knowledge/create','KnowledgeController@create');
 Route::get('/knowledge/edit','KnowledgeController@edit');
+
+Route::get('/seo','SeoController@listing');
