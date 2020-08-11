@@ -2,18 +2,19 @@
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        <div class="col-6">
+        <div class="col-12">
             <h1 class="title">SEO</h1>
-        </div>
-        <div class="col-6">
-            <span class="float-right">
-                <a href="#" type="button" class="btn btn-success text-light">Save</a>
-            </span>
         </div>
     </div>
     <div class="dropdown-divider "></div>
     <div class="col-12 col-md-12" style="background-color: #e8e8e8;">
         <div class="row">
+        <div class="col-12">
+            <span class="float-right">
+                <a href="#" type="button" class="btn btn-success text-light">Save</a>
+                <a href="{{url('admin/seo')}}" type="button" class="btn btn-danger text-light">Cancel</a>
+            </span>
+        </div>
             <div class="col-12">
                 <form class="item form-group form-horizontal">
                     <ul class="nav nav-tabs mb-1">

@@ -46,8 +46,8 @@
                 <thead class="bg-info text-light">
                     <tr>
                         <th scope="col">No.</th>
-                        <th scope="col">title</th>
-                        <th scope="col">Description</th>
+                        <th scope="col" style="min-width: 25%; width: 25%;">title</th>
+                        <th scope="col"style="min-width: 25%; width: 25%;">Description</th>
                         <th scope="col">Created Date</th>
                         <th scope="col">Updated Date</th>
                         <th scope="col">Status</th>
@@ -69,7 +69,7 @@
                             Inactive
                             @endif
                         </td>
-                        <td><a href="#" type="button" class="btn btn-warning text-light">edit</a> </td>
+                        <td><a href="{{url('admin/knowledge/edit')}}" type="button" class="btn btn-warning text-light">edit</a> </td>
                     </tr>
                 </tbody>
                 @endforeach

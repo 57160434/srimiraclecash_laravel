@@ -13,7 +13,7 @@ class Knowledge extends Model
                             'knowledge_heading',
                             'knowledge_description',
                             'knowledge_detail',
-                            'knowledge_img_folder_path',
+                            'knowledge_img_gallery',
                             'knowledge_status',
                             'knowledge_created_at',
                             'knowledge_updated_at',

@@ -11,8 +11,9 @@ Route::get('/home', 'BackController@successlogin');
 Route::get('/logout', 'BackController@logout');
 
 Route::get('/knowledge/listing','KnowledgeController@listing');
-// Route::resource('/knowledge/listing','KnowledgeController');
+Route::get('/knowledge/getknowledge','KnowledgeController@getKnowledgeByAPI');
 Route::get('/knowledge/create','KnowledgeController@create');
+Route::post('/knowledge/createknowledge', 'BackController@createKnowledgeByAPI');
 Route::get('/knowledge/edit','KnowledgeController@edit');
 
 Route::get('/seo','SeoController@listing');

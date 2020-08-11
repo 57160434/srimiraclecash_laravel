@@ -1,19 +1,25 @@
 @extends('layouts.admindefault')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        <div class="col-6">
+        <div class="col-12">
             <h1 class="title">Article</h1>
-        </div>
-        <div class="col-6">
-            <span class="float-right">
-                <a href="#" type="button" class="btn btn-success text-light">Save</a>
-            </span>
         </div>
     </div>
     <div class="dropdown-divider "></div>
     <div class="col-12 col-md-12" style="background-color: #e8e8e8;">
         <div class="row">
+            <div class="col-12">
+                <span class="float-right">
+                    <a href="#" type="button" class="btn btn-success text-light">Save</a>
+                    <a href="{{url('admin/knowledge/listing')}}" type="button"
+                        class="btn btn-danger text-light">Cancel</a>
+                </span>
+            </div>
             <div class="col-12">
                 <form class="item form-group form-horizontal">
                     <ul class="nav nav-tabs ">
@@ -24,7 +30,7 @@
                     <div class="tab-content ">
                         <div id="general" class="tab-pane fade in active">
                             <div class="row">
-                                <div class="col-md-2 col-sm-12 mb-1">
+                                <div class="col-md-2 col-sm-12 mb-1 ">
                                     <label class="control-label" for="image">Image Title <span
                                             class="required">*</span></label>
                                 </div>
@@ -50,7 +56,7 @@
                                 </div>
                                 <div class="col-md-4 col-sm-12">
                                 </div>
-                                <div class="col-md-2 col-sm-12 mb-1">
+                                <div class="col-md-2 col-sm-12 mb-1 ">
                                     <label class="control-label" for="knowledgeTitle">Title</label>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
@@ -59,7 +65,7 @@
                                 <div class="col-md-4 col-sm-12">
                                     <label class="control-label "></label>
                                 </div>
-                                <div class="col-md-2 col-sm-12 mb-1">
+                                <div class="col-md-2 col-sm-12 mb-1 ">
                                     <label class="control-label" for="knowledgeDescription">Description</label>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
@@ -68,17 +74,21 @@
                                 <div class="col-md-4 col-sm-12">
                                     <label class="control-label "></label>
                                 </div>
-                                <div class="col-md-2 col-sm-12 mb-1">
+                                <div class="col-md-2 col-sm-12 mb-1 ">
                                     <label class="control-label" for="knowledgeDatail">Datail</label>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
-                                    <input class="form-control input-lg" id="knowledgeDatail" type="text">
+                                    <form action="#" method="POST">
+                                        {{ csrf_field() }}
+                                        <textarea name="messageInput" class="summernote"></textarea>
+                                        <!-- <button type="submit" class="btn btn-primary">Comment</button> -->
+                                    </form>
                                 </div>
                                 <div class="col-md-4 col-sm-12">
                                     <label class="control-label "></label>
                                 </div>
-                                <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label " for="image">Image Title <span
+                                <div class="col-md-2 col-sm-12 mb-1  ">
+                                    <label class="control-label" for="image">Gallery<span
                                             class="required">*</span></label>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
@@ -117,7 +127,8 @@
                                     <label class="control-label "></label>
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaDescription">Meta Description</label>
+                                    <label class="control-label " for="knowledgeMetaDescription">Meta
+                                        Description</label>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaDescription" type="text">
@@ -142,4 +153,9 @@
         </div>
     </div>
 </div>
+<script>
+$(document).ready(function() {
+    $('.summernote').summernote();
+});
+</script>
 @stop
