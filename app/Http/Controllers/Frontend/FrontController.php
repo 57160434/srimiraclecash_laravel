@@ -10,8 +10,8 @@ class FrontController extends Controller
 {
     public function index ()
     {
-        $knowledges = Knowledge::all();
-        return view('Frontend.index',['knowledges'=>$knowledges]);
+        $knowledges = Knowledge::orderBy('knowledge_created_at','desc')->limit(3)->get();
+        return view('Frontend.index',compact('knowledges'));
     }
     public function knowledgeDetail ($id)
     {

@@ -10,5 +10,13 @@
             <hr class="w-100 border-main"><br />
         </div>
     </div>
+    <div class="container-fluid">
+        <h4>{{$knowledge->knowledge_heading}}</h4>
+        <label><i class="far fa-calendar-alt"></i> {{$knowledge->knowledge_created_at}}</label>
+        <div>
+        <strong>{{$knowledge->knowledge_description}}</strong>
+        </div>
+        <div>{{$knowledge->knowledge_detail}}</div>
+    </div>
 </div>
 @stop

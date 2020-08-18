@@ -198,13 +198,13 @@
                                     <span>{{$i->knowledge_created_at}}</span>
                                     <label>FEB</label>
                                 </div>
-                                <a href="#">
+                                <a href="{{url('knowledge',['knowledge'=> $i->id])}}">
                                     <img src="{{asset('img/blog/pexels-6187.jpg')}}" title="" alt="">
                                 </a>
                             </div>
                             <div class="blog-info">
-                                <h5><a href="#">{{$i->knowledge_heading}}</a></h5>
-                                <p>{{$i->knowledge_description}}</p>
+                                <h5 class="text-length"><a href="{{url('knowledge',['knowledge'=> $i->id])}}">{{$i->knowledge_heading}}</a></h5>
+                                <p class="text-length">{{$i->knowledge_description}}</p>
                                 <div class="btn-bar">
                                 <a href="{{url('knowledge',['knowledge'=> $i->id])}}" class="px-btn-arrow">
                                         <span>Read More</span>

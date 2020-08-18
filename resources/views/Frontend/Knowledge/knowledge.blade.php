@@ -23,13 +23,13 @@
                                     <span>{{$knowledge->knowledge_created_at}}</span>
                                     <label>FEB</label>
                                 </div>
-                                <a href="#">
+                                <a href="{{url('knowledge',['knowledge'=> $knowledge->id])}}">
                                     <img src="{{asset('img/blog/pexels-6187.jpg')}}" title="" alt="">
                                 </a>
                             </div>
                             <div class="blog-info">
-                                <h5><a href="#">{{$knowledge->knowledge_heading}}</a></h5>
-                                <p>{{$knowledge->knowledge_description}}</p>
+                                <h5 class="text-length"><a href="{{url('knowledge',['knowledge'=> $knowledge->id])}}">{{$knowledge->knowledge_heading}}</a></h5>
+                                <p class="text-length">{{$knowledge->knowledge_description}}</p>
                                 <div class="btn-bar">
                                 <a href="{{url('knowledge',['knowledge'=> $knowledge->id])}}" class="px-btn-arrow">
                                         <span>Read More</span>
@@ -44,15 +44,12 @@
                 </div>
             </div>
         </div>
+    
         <!-- </div> -->
     </div>
     <div style="padding:20px">
         <ul class="pagination justify-content-center">
-            <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
-            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        {{$knowledges->links()}}
         </ul>
     </div>
 </div>

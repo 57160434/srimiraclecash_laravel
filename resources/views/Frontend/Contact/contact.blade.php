@@ -195,4 +195,5 @@
             </div>
         </div>
     </div>
-    @stop
+</div>
+@stop

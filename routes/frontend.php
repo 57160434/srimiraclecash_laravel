@@ -11,3 +11,4 @@ Route::get('/contact', 'FrontController@contact');
 
 Route::get('/knowledge','KnowledgeController@listing');
 Route::get('/knowledge/{id}', 'KnowledgeController@knowledgeDetail');
+// Route::get('knowledge/fetch_data', 'KnowledgeController@fetch_data');
