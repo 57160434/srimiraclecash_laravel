@@ -14,7 +14,7 @@
                             <div class="col-12 d-flex align-items-center justify-content-center mb-2">
                                 <div class="d-flex align-items-center justify-content-center" data-toggle="modal"
                                     data-target="#exampleModal" style="cursor: pointer;">
-                                    <a href="tel:093 494 1445" class="text-white">
+                                    <a href="tel:080 280 8185" class="text-white">
                                         <img src="{{asset('img/icon/tel.png')}}" class="rounded-circle"
                                             style="width: 80px; border: 2px solid #fff;" alt="">
                                     </a>
@@ -22,8 +22,8 @@
                             </div>
                             <div class="col-12 text-center mt-0">
                                 <h4 class="text-white">Call</h4>
-                                <a href="tel:093 494 1445" target="_black">
-                                    <p style="color: #fff; font-size: 15px;">093 494 1445</p>
+                                <a href="tel:080 280 8185" target="_black">
+                                    <p style="color: #fff; font-size: 15px;">080 280 8185</p>
                                 </a>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                             <div class="col-12 d-flex align-items-center justify-content-center mb-2">
                                 <div class="d-flex align-items-center justify-content-center" data-toggle="modal"
                                     data-target="#exampleModal" style="cursor: pointer;">
-                                    <a href="http://line.me/ti/p/~0970017850" class="text-white" target="_black">
+                                    <a href="http://line.me/ti/p/~0802808185" class="text-white" target="_black">
                                         <img src="{{asset('img/icon/line.png')}}" class="rounded-circle"
                                             style="width: 80px; border: 2px solid #fff;" alt="">
                                     </a>
@@ -60,8 +60,8 @@
                             </div>
                             <div class="col-12 text-center mt-0">
                                 <h4 class="text-white">Line</h4>
-                                <a href="http://line.me/ti/p/~0934941445" target="_black">
-                                    <p style="color: #fff; font-size: 15px;">0970017850</p>
+                                <a href="http://line.me/ti/p/~0802808185" target="_black">
+                                    <p style="color: #fff; font-size: 15px;">0802808185</p>
                                 </a>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                             <div class="col-12 d-flex align-items-center justify-content-center mb-2">
                                 <div class="d-flex align-items-center justify-content-center" data-toggle="modal"
                                     data-target="#exampleModal" style="cursor: pointer;">
-                                    <a href="https://www.facebook.com/srimiracle" class="text-white" target="_black">
+                                    <a href="https://www.facebook.com/srimiraclecash" class="text-white" target="_black">
                                         <img src="{{asset('img/icon/facebook.png')}}" class="rounded-circle"
                                             style="width: 80px; border: 2px solid #fff;" alt="">
                                     </a>
@@ -79,7 +79,7 @@
                             </div>
                             <div class="col-12 text-center mt-0">
                                 <h4 class="text-white">Facebook</h4>
-                                <a href="https://www.facebook.com/srimiracle" target="_black">
+                                <a href="https://www.facebook.com/srimiraclecash" target="_black">
                                     <p style="color: #fff; font-size: 15px;">Srimiraclecash</p>
                                 </a>
                             </div>

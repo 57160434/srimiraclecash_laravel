@@ -4,12 +4,19 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Knowledge;
 
 class FrontController extends Controller
 {
     public function index ()
     {
         return view('Frontend.index');
+    }
+    function listing()
+    {
+        $knowledge = Knowledge::paginate(4);
+        // return response()->json($knowledge);
+        return view('Frontend.Knowledge.knowledge',['knowledge'=>$knowledge]);
     }
     public function customer ()
     {

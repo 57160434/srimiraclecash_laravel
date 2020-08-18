@@ -1,4 +1,5 @@
 @extends('layouts.default')
+<link href="{{ asset('css/knowledge.css') }}" rel="stylesheet">
 @section('content')
 
 <i class="fa fa-eye"></i>
@@ -185,81 +186,42 @@
         <h3>สาระการเงิน</h3>
     </div>
     <div class="container-fluid">
-        <div class="card-deck">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-lg-3">
-                    <div class="card">
-                        <div style="padding: 14px">
-                            <img class="card-img-top rounded" src="{{asset('img/blog/blog1.png')}}"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-lg-3">
-                    <div class="card">
-                        <div style="padding: 14px">
-                            <img class="card-img-top rounded" src="{{asset('img/blog/blog1.png')}}"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+    <div class="row align-items-start">
+            <div class="col-lg-12 m-15px-tb">
+                <div class="row">
+                    @foreach($knowledge as $i)
+                    @if ($i->knowledge_status === 1)
+                    <div class="col-sm-4">
+                        <div class="blog-grid">
+                            <div class="blog-img">
+                                <div class="date">
+                                    <span>{{$i->knowledge_created_at}}</span>
+                                    <label>FEB</label>
+                                </div>
+                                <a href="#">
+                                    <img src="{{asset('img/blog/pexels-6187.jpg')}}" title="" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-info">
+                                <h5><a href="#">{{$i->knowledge_heading}}</a></h5>
+                                <p>{{$i->knowledge_description}}</p>
+                                <div class="btn-bar">
+                                    <a href="#" class="px-btn-arrow">
+                                        <span>Read More</span>
+                                        <i class="arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-lg-3">
-                    <div class="card">
-                        <div style="padding: 14px">
-                            <img class="card-img-top rounded" src="{{asset('img/blog/blog1.png')}}"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-lg-3">
-                    <div class="card">
-                        <div style="padding: 14px">
-                            <img class="card-img-top rounded" src="{{asset('img/blog/blog1.png')}}"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
+                    @endif
+                    @endforeach
                 </div>
             </div>
         </div>
     </div>
     <div class="col-12 d-flex justify-content-center mt-0 mt-md-4 pt-0 pt-md-4">
-        <a href="#" class="btn bg-primary" style="color: #fff;">ดูสาระการเงินทั้งหมด</a>
+        <a href="{{url('knowledge')}}" class="btn bg-primary" style="color: #fff;">ดูสาระการเงินทั้งหมด</a>
     </div>
 </div><!-- end knowledge-->
 
@@ -277,7 +239,7 @@
                                 </p>
                             </div>
                             <div class="col-12 d-flex justify-content-center mt-4">
-                                <a href="#" class="btn bg-white px-4" style="color: #000;">ปรึกษาเรา <i
+                                <a href="{{url('contact')}}" class="btn bg-white px-4" style="color: #000;">ปรึกษาเรา <i
                                         class="fa fa-chevron-right" aria-hidden="true"></i></a>
                             </div>
                         </div>

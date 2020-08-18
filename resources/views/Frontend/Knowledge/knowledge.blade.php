@@ -4,92 +4,47 @@
 <div style="padding:100px 0px 40px">
     <img class="img-fluid" src="{{asset('img/banner/srimiracle_banner.png')}}" />
 </div>
-<div style="padding:0px 25px 80px 0px">
-    <div class="container">
+<div style="padding:0px 0px 80px 0px">
+    <div class="container-fluid">
         <div class="col-md-12 section-page-4" style="padding-bottom: 0;">
             <h3 class="font-prompt"><i class="fas fa-donate ore"></i> สาระการเงิน</h3>
             <hr class="w-100 border-main"><br />
         </div>
-        <div class="container">
-            <div class="row align-items-start">
-                <div class="col-lg-12 m-15px-tb">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="blog-grid">
-                                <div class="blog-img">
-                                    <div class="date">
-                                        <span>04</span>
-                                        <label>FEB</label>
-                                    </div>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/400x200/FFB6C1/000000" title="" alt="">
-                                    </a>
+        <!-- <div class="container-fluid"> -->
+        <div class="row align-items-start">
+            <div class="col-lg-12 m-15px-tb">
+                <div class="row">
+                    @foreach($knowledge as $i)
+                    @if ($i->knowledge_status === 1)
+                    <div class="col-sm-4">
+                        <div class="blog-grid">
+                            <div class="blog-img">
+                                <div class="date">
+                                    <span>{{$i->knowledge_created_at}}</span>
+                                    <label>FEB</label>
                                 </div>
-                                <div class="blog-info">
-                                    <h5><a href="#">Prevent 75% of visitors from google analytics</a></h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                    <div class="btn-bar">
-                                        <a href="#" class="px-btn-arrow">
-                                            <span>Read More</span>
-                                            <i class="arrow"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                <a href="#">
+                                    <img src="{{asset('img/blog/pexels-6187.jpg')}}" title="" alt="">
+                                </a>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="blog-grid">
-                                <div class="blog-img">
-                                    <div class="date">
-                                        <span>04</span>
-                                        <label>FEB</label>
-                                    </div>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/400x200/FFB6C1/000000" title="" alt="">
+                            <div class="blog-info">
+                                <h5><a href="#">{{$i->knowledge_heading}}</a></h5>
+                                <p>{{$i->knowledge_description}}</p>
+                                <div class="btn-bar">
+                                    <a href="#" class="px-btn-arrow">
+                                        <span>Read More</span>
+                                        <i class="arrow"></i>
                                     </a>
-                                </div>
-                                <div class="blog-info">
-                                    <h5><a href="#">Prevent 75% of visitors from google analytics</a></h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                    <div class="btn-bar">
-                                        <a href="#" class="px-btn-arrow">
-                                            <span>Read More</span>
-                                            <i class="arrow"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="blog-grid">
-                                <div class="blog-img">
-                                    <div class="date">
-                                        <span>04</span>
-                                        <label>FEB</label>
-                                    </div>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/400x200/FFB6C1/000000" title="" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-info">
-                                    <h5><a href="#">Prevent 75% of visitors from google analytics</a></h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                    <div class="btn-bar">
-                                        <a href="#" class="px-btn-arrow">
-                                            <span>Read More</span>
-                                            <i class="arrow"></i>
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endif
+                    @endforeach
                 </div>
             </div>
         </div>
+        <!-- </div> -->
     </div>
     <div style="padding:20px">
         <ul class="pagination justify-content-center">

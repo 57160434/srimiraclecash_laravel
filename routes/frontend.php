@@ -1,6 +1,7 @@
 <?php
 
 Route::get('/', 'FrontController@index');
+Route::get('/','FrontController@listing');
 
 Route::get('/customer', 'FrontController@customer');
 Route::get('/service', 'FrontController@service');

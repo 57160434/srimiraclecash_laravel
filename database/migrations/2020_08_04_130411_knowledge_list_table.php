@@ -16,10 +16,16 @@ class KnowledgeListTable extends Migration
         Schema::create('Knowledge',function (Blueprint $table) {
             $table->increments('knowledge_id');
             $table->string('knowledge_heading');
+            $table->string('knowledge_description');
             $table->string('knowledge_detail');
-            $table->string('folder_path');
+            $table->string('knowledge_img_gallery');
             $table->timestamp('knowledge_created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('knowledge_updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+            $table->tinyInteger('knowledge_status');
+            $table->string('knowledge_meta_title');
+            $table->string('knowledge_meta_description');
+            $table->string('knowledge_meta_keyword');
+
             // $table->timestamps()
         });
     }

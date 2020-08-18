@@ -11,14 +11,16 @@ class KnowledgeController extends Controller
     //
     function listing()
     {
-        $knowledge = Knowledge::all();
+        $knowledge = Knowledge::paginate(10);
         // return response()->json($knowledge);
         return view('Backend.Knowledge.knowledgelist',['knowledge'=>$knowledge]);
     }
+
     function createKnowledgeByAPI(Request $request) 
     {
-        $knowledge = new Knowledge;
-        $knowledge->knowlege_img_title = $request->input('knowlege_img_title');
+        $knowledge = new Knowledge();
+
+        $knowledge->knowledge_img_title = $request->input('knowledge_img_title');
         $knowledge->knowledge_heading = $request->input('knowledge_heading');
         $knowledge->knowledge_description = $request->input('knowledge_description');
         $knowledge->knowledge_detail = $request->input('knowledge_detail');
@@ -31,6 +33,7 @@ class KnowledgeController extends Controller
         $knowledge->save();
         return response()->json($knowledge);
     }
+
     function getKnowledgeByAPI()
     {
         $knowledge = Knowledge::all();
