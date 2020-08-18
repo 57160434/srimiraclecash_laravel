@@ -10,13 +10,8 @@ class FrontController extends Controller
 {
     public function index ()
     {
-        return view('Frontend.index');
-    }
-    function listing()
-    {
         $knowledge = Knowledge::paginate(4);
-        // return response()->json($knowledge);
-        return view('Frontend.Knowledge.knowledge',['knowledge'=>$knowledge]);
+        return view('Frontend.index',['knowledge'=>$knowledge]);
     }
     public function customer ()
     {
