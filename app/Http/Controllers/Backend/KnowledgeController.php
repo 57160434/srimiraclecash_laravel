@@ -12,6 +12,7 @@ class KnowledgeController extends Controller
     function listing()
     {
         // return response()->json($knowledge);
+        $knowledge = Knowledge::orderBy('knowledge_created_at','desc')->paginate(10);
         return view('Backend.Knowledge.knowledgelist',['knowledge'=>$knowledge]);
     }
 

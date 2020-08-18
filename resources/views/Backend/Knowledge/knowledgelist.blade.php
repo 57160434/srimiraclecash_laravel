@@ -47,17 +47,18 @@
                     <tr>
                         <th scope="col">No.</th>
                         <th scope="col" style="min-width: 25%; width: 25%;">title</th>
-                        <th scope="col"style="min-width: 25%; width: 25%;">Description</th>
+                        <th scope="col" style="min-width: 25%; width: 25%;">Description</th>
                         <th scope="col">Created Date</th>
                         <th scope="col">Updated Date</th>
                         <th scope="col">Status</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
+                <?php $count =1 ?>
                 @foreach($knowledge as $i)
                 <tbody>
                     <tr>
-                        <th scope="row">{{$i->count()}}</th>
+                        <th scope="row">{{$count++}}</th>
                         <td>{{$i->knowledge_heading}}</td>
                         <td>{{$i->knowledge_description}}</td>
                         <td>{{$i->knowledge_created_at}}</td>
@@ -69,29 +70,17 @@
                             Inactive
                             @endif
                         </td>
-                        <td><a href="{{url('admin/knowledge/edit')}}" type="button" class="btn btn-warning text-light">edit</a> </td>
+                        <td><a href="{{url('admin/knowledge/edit')}}" type="button"
+                                class="btn btn-warning text-light">edit</a> </td>
                     </tr>
                 </tbody>
                 @endforeach
             </table>
-            <nav aria-label="...">
+            <div style="padding:20px">
                 <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <span class="page-link">Previous</span>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active">
-                        <span class="page-link">
-                            2
-                            <span class="sr-only">(current)</span>
-                        </span>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
+                    {{$knowledge->links()}}
                 </ul>
-            </nav>
+            </div>
         </div>
     </div>
 </div>

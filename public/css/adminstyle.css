@@ -116,7 +116,7 @@ a[data-toggle="collapse"] {
 
 ul ul a {
     font-size: 0.9em !important;
-    padding-left: 30px !important;
+    /* padding-left: 30px !important; */
     background: #6d7fcc;
 }
 
@@ -306,3 +306,11 @@ a.article, a.article:hover {
 .form-horizontal .control-label {
     padding-top: 8px;
 }
+
+.text-length {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
