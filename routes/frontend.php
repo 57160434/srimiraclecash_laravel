@@ -10,3 +10,4 @@ Route::get('/document', 'FrontController@document');
 Route::get('/contact', 'FrontController@contact');
 
 Route::get('/knowledge','KnowledgeController@listing');
+Route::get('/knowledge/{id}', 'KnowledgeController@knowledgeDetail');

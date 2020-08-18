@@ -11,7 +11,6 @@ class KnowledgeController extends Controller
     //
     function listing()
     {
-        $knowledge = Knowledge::paginate(10);
         // return response()->json($knowledge);
         return view('Backend.Knowledge.knowledgelist',['knowledge'=>$knowledge]);
     }

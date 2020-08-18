@@ -14,13 +14,13 @@
         <div class="row align-items-start">
             <div class="col-lg-12 m-15px-tb">
                 <div class="row">
-                    @foreach($knowledge as $i)
-                    @if ($i->knowledge_status === 1)
+                    @foreach($knowledges as $knowledge)
+                    @if ($knowledge->knowledge_status === 1)
                     <div class="col-sm-4">
                         <div class="blog-grid">
                             <div class="blog-img">
                                 <div class="date">
-                                    <span>{{$i->knowledge_created_at}}</span>
+                                    <span>{{$knowledge->knowledge_created_at}}</span>
                                     <label>FEB</label>
                                 </div>
                                 <a href="#">
@@ -28,10 +28,10 @@
                                 </a>
                             </div>
                             <div class="blog-info">
-                                <h5><a href="#">{{$i->knowledge_heading}}</a></h5>
-                                <p>{{$i->knowledge_description}}</p>
+                                <h5><a href="#">{{$knowledge->knowledge_heading}}</a></h5>
+                                <p>{{$knowledge->knowledge_description}}</p>
                                 <div class="btn-bar">
-                                    <a href="#" class="px-btn-arrow">
+                                <a href="{{url('knowledge',['knowledge'=> $knowledge->id])}}" class="px-btn-arrow">
                                         <span>Read More</span>
                                         <i class="arrow"></i>
                                     </a>

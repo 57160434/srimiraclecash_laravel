@@ -135,7 +135,7 @@
         </div>
     </div>
 </div>
-<div style="padding : 0px 15px 40px 15px;">
+<div style="padding : 0px 0px 40px 0px;">
     <div class="container-fluid">
         <div class="row bg-info">
             <div class="col-md-3 col-sm-12 text-center text-white widget-wrap">
@@ -162,14 +162,14 @@
                         <div class="carousel-item">
                             <img src="{{ asset('img/slider/slide2.jpg')}}" class="d-block w-100" alt="..." />
                             <div class="carousel-caption ">
-                                <h5>First slide label</h5>
+                                <h5>Second slide label</h5>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="{{ asset('img/slider/slide3.jpg')}}" class="d-block w-100" alt="..." />
                             <div class="carousel-caption ">
-                                <h5>First slide label</h5>
+                                <h5>Third  slide label</h5>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
     <div class="row align-items-start">
             <div class="col-lg-12 m-15px-tb">
                 <div class="row">
-                    @foreach($knowledge as $i)
+                    @foreach($knowledges as $i)
                     @if ($i->knowledge_status === 1)
                     <div class="col-sm-4">
                         <div class="blog-grid">
@@ -206,7 +206,7 @@
                                 <h5><a href="#">{{$i->knowledge_heading}}</a></h5>
                                 <p>{{$i->knowledge_description}}</p>
                                 <div class="btn-bar">
-                                    <a href="#" class="px-btn-arrow">
+                                <a href="{{url('knowledge',['knowledge'=> $i->id])}}" class="px-btn-arrow">
                                         <span>Read More</span>
                                         <i class="arrow"></i>
                                     </a>
@@ -221,7 +221,7 @@
         </div>
     </div>
     <div class="col-12 d-flex justify-content-center mt-0 mt-md-4 pt-0 pt-md-4">
-        <a href="{{url('knowledge')}}" class="btn bg-primary" style="color: #fff;">ดูสาระการเงินทั้งหมด</a>
+        <a href="{{url('knowledge')}}" class="btn btn-lg bg-primary text-light">ดูสาระการเงินทั้งหมด</a>
     </div>
 </div><!-- end knowledge-->
 
@@ -239,7 +239,7 @@
                                 </p>
                             </div>
                             <div class="col-12 d-flex justify-content-center mt-4">
-                                <a href="{{url('contact')}}" class="btn bg-white px-4" style="color: #000;">ปรึกษาเรา <i
+                                <a href="{{url('contact')}}" class="btn btn-lg bg-secondary px-4 text-light" >ปรึกษาเรา <i
                                         class="fa fa-chevron-right" aria-hidden="true"></i></a>
                             </div>
                         </div>

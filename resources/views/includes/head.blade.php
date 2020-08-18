@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="{{asset('img/icon/srimiracle_fav.png')}}"/>
 
     <!-- <title>{{ config('app.name', 'Srimiraclecash') }}</title> -->
+    
     <title>Cash Services | MiracleCash</title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
