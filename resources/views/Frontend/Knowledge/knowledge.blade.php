@@ -1,5 +1,20 @@
 @extends('layouts.default')
+
+@foreach ($seopage as $object)
+@section('title')
+{{ $object->metatitle }}
+@endsection
+@section('description')
+{{$object->metadescription}}
+@endsection
+@section('keyword')
+{{$object->metakeyword}}
+@endsection
+@endforeach
+
+@section('link')
 <link href="{{ asset('css/knowledge.css') }}" rel="stylesheet">
+@endsection
 @section('content')
 <div style="padding:100px 0px 40px">
     <img class="img-fluid" src="{{asset('img/banner/srimiracle_banner.png')}}" />
@@ -28,10 +43,12 @@
                                 </a>
                             </div>
                             <div class="blog-info">
-                                <h5 class="text-length"><a href="{{url('knowledge',['knowledge'=> $knowledge->id])}}">{{$knowledge->knowledge_heading}}</a></h5>
+                                <h5 class="text-length"><a
+                                        href="{{url('knowledge',['knowledge'=> $knowledge->id])}}">{{$knowledge->knowledge_heading}}</a>
+                                </h5>
                                 <p class="text-length">{{$knowledge->knowledge_description}}</p>
                                 <div class="btn-bar">
-                                <a href="{{url('knowledge',['knowledge'=> $knowledge->id])}}" class="px-btn-arrow">
+                                    <a href="{{url('knowledge',['knowledge'=> $knowledge->id])}}" class="px-btn-arrow">
                                         <span>Read More</span>
                                         <i class="arrow"></i>
                                     </a>
@@ -44,12 +61,12 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- </div> -->
     </div>
     <div style="padding:20px">
         <ul class="pagination justify-content-center">
-        {{$knowledges->links()}}
+            {{$knowledges->links()}}
         </ul>
     </div>
 </div>

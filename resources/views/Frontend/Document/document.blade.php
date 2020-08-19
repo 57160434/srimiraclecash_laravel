@@ -1,4 +1,17 @@
 @extends('layouts.default')
+
+@foreach ($seopage as $object)
+@section('title')
+{{ $object->metatitle }}
+@endsection
+@section('description')
+{{$object->metadescription}}
+@endsection
+@section('keyword')
+{{$object->metakeyword}}
+@endsection
+@endforeach
+
 @section('content')
 <div style="padding:100px 0px 100px">
     <div style="padding:0px 0px 40px">

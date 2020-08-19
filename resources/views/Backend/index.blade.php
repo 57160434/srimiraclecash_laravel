@@ -42,6 +42,10 @@
                                     @endforeach
                                 </ul>
                             </div>
+                            @else 
+                            <div class="alert alert-success">
+                                <p>Session::get('success')</p>
+                            </div>
                             @endif
                             <form action="{{url('/admin/checklogin')}}" method="post">
                                 {{ csrf_field() }}

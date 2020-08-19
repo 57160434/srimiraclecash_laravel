@@ -1,5 +1,20 @@
 @extends('layouts.default')
+@section('link')
 <link href="{{ asset('css/knowledge.css') }}" rel="stylesheet">
+@endsection
+
+@foreach ($seopage as $object)
+@section('title')
+{{ $object->metatitle }}
+@endsection
+@section('description')
+{{$object->metatitle}}
+@endsection
+@section('keyword')
+{{$object->metatitle}}
+@endsection
+@endforeach
+
 @section('content')
 
 <i class="fa fa-eye"></i>
@@ -169,7 +184,7 @@
                         <div class="carousel-item">
                             <img src="{{ asset('img/slider/slide3.jpg')}}" class="d-block w-100" alt="..." />
                             <div class="carousel-caption ">
-                                <h5>Third  slide label</h5>
+                                <h5>Third slide label</h5>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </div>
                         </div>
@@ -186,7 +201,7 @@
         <h3>สาระการเงิน</h3>
     </div>
     <div class="container-fluid">
-    <div class="row align-items-start">
+        <div class="row align-items-start">
             <div class="col-lg-12 m-15px-tb">
                 <div class="row">
                     @foreach($knowledges as $i)
@@ -203,10 +218,12 @@
                                 </a>
                             </div>
                             <div class="blog-info">
-                                <h5 class="text-length"><a href="{{url('knowledge',['knowledge'=> $i->id])}}">{{$i->knowledge_heading}}</a></h5>
+                                <h5 class="text-length"><a
+                                        href="{{url('knowledge',['knowledge'=> $i->id])}}">{{$i->knowledge_heading}}</a>
+                                </h5>
                                 <p class="text-length">{{$i->knowledge_description}}</p>
                                 <div class="btn-bar">
-                                <a href="{{url('knowledge',['knowledge'=> $i->id])}}" class="px-btn-arrow">
+                                    <a href="{{url('knowledge',['knowledge'=> $i->id])}}" class="px-btn-arrow">
                                         <span>Read More</span>
                                         <i class="arrow"></i>
                                     </a>
@@ -239,8 +256,8 @@
                                 </p>
                             </div>
                             <div class="col-12 d-flex justify-content-center mt-4">
-                                <a href="{{url('contact')}}" class="btn btn-lg bg-secondary px-4 text-light" >ปรึกษาเรา <i
-                                        class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                <a href="{{url('contact')}}" class="btn btn-lg bg-secondary px-4 text-light">ปรึกษาเรา
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>

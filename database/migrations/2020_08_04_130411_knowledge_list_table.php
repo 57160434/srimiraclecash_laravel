@@ -14,7 +14,7 @@ class KnowledgeListTable extends Migration
     public function up()
     {
         Schema::create('Knowledge',function (Blueprint $table) {
-            $table->increments('knowledge_id');
+            $table->increments('id');
             $table->string('knowledge_heading');
             $table->string('knowledge_description');
             $table->string('knowledge_detail');

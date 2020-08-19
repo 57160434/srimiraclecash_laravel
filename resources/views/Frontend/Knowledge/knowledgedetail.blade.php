@@ -1,4 +1,13 @@
 @extends('layouts.default')
+@section('title')
+{{$knowledge->knowledge_meta_title}} | Srimiracle
+@endsection
+@section('description')
+{{$knowledge->knowledge_meta_description}}
+@endsection
+@section('keyword')
+{{$knowledge->knowledge_meta_keyword}}
+@endsection
 @section('content')
 <div style="padding:100px 0px 40px">
     <img class="img-fluid" src="{{asset('img/banner/srimiracle_banner.png')}}" />
@@ -14,7 +23,7 @@
         <h4>{{$knowledge->knowledge_heading}}</h4>
         <label><i class="far fa-calendar-alt"></i> {{$knowledge->knowledge_created_at}}</label>
         <div>
-        <strong>{{$knowledge->knowledge_description}}</strong>
+            <strong>{{$knowledge->knowledge_description}}</strong>
         </div>
         <div>{{$knowledge->knowledge_detail}}</div>
     </div>

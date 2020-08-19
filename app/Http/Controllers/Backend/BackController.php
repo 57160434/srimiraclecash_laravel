@@ -12,7 +12,7 @@ class BackController extends Controller
 {
     public function index ()
     {
-        $customer = User::all();
+        // $customer = User::all();
         // return response()->json($customer);
         
         return view('Backend.index');
