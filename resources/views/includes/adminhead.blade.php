@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>{{ config('app.name', 'Srimiraclecash') }}</title>
+<title>@yield('title')</title>
 
 <!-- Bootstrap CSS CDN -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="{{asset('img/icon/srimiracle_fav.png')}}"/>
 <link rel="stylesheet" href="{{asset('css/adminstyle.css')}}">
     <script src="{{ asset('js/myjs.js') }}"></script>
-
+@yield('script')
 <!-- Font Awesome JS -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
     integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">

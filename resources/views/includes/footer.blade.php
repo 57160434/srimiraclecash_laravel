@@ -105,7 +105,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <h4 class=" font-prompt mb-4  text-light" style="font-weight: 400;">ติดต่อทางไลน์</h4>
-                <a href="http://line.me/ti/p/~0934941445" target="_blank">
+                <a href="http://line.me/ti/p/~0802808185" target="_blank">
                     <div class="mt-4">
                         <img src="{{asset('img/icon/srimiracle_line.png')}}" class="w-50" alt="">
                     </div>

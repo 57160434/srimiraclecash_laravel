@@ -26,28 +26,13 @@
                 <div class=""></div><br>
             </div>
                 @if(count($errors) > 0)
-                <div class="alert alert-danger col-sm-12 col-md-6">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                        <li>{{$error}}</li>
-                        @endforeach
-                    </ul>
-                </div>
+                        <?php  Alert::error('Something went wrong',$errors->all());?>
                 @endif
-                
-            @if(\Session::has('success'))
-            <div class="alert alert-success col-sm-12 col-md-6">
-                <ul>
-                    <li>{!! \Session::get('success') !!}</li>
-                </ul>
-            </div>
-            @endif
             <div class="col-12 col-md-12 col-lg-8" style="background-color: #e8e8e8;">
                 <div class="row">
                     <div class="col-12">
-                        <form class="my-4" action="{{url('contact')}}" method="POST">
+                        <form class="my-4" action="{{url('contact')}}" method="POST" enctype="multipart/form-data">
                             {{csrf_field()}}
-                            <!-- <input type="hidden" value="a28tj04vdr0kRbZo1PilSEcLewzP4bGFYFuky6NC" name="_token"> -->
                             <div class="form-row align-items-center">
                                 <div class="col-12 col-lg-6 py-2 px-2">
                                     <div class="input-group">
@@ -121,21 +106,10 @@
                                 </div>
                                 <div class="col-12 py-2 px-2">
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="validatedCustomFile"
-                                            name="file">
-                                        <script>
-                                        $('input[name="file"]').on('change', function() {
-                                            var file = this.files[0];
-                                            var fileType = file["type"];
-                                            var validImageTypes = ["image/jpeg", "image/png"];
-                                            if ($.inArray(fileType, validImageTypes) < 0) {
-                                                alert('กรุณาอัพโหลดเฉพาะรูปภาพ jpeg หรือ png');
-                                                $(this).val('');
-                                            }
-                                        })
-                                        </script>
-                                        <label class="custom-file-label" for="validatedCustomFile">Choose
-                                            file...</label>
+                                        <input type="file" class="custom-file-input" id="folder_path"
+                                            name="folder_path">
+                                        <label class="custom-file-label" for="validatedCustomFile">
+                                            </label>
                                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                                     </div>
                                 </div>

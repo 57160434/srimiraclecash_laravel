@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\apiCustomer;
 use App\Seopage;
+Use Alert;
 
 class ContactController extends Controller
 {
@@ -16,7 +17,8 @@ class ContactController extends Controller
     }
     //
     function createCustomer (Request $request)
-    {
+    {   
+        
         $this->validate($request, [
             'customer_title'    =>  'required',
             'customer_fullname'     =>  'required',
@@ -27,6 +29,27 @@ class ContactController extends Controller
             'customer_detail'     =>  'required',
             // 'folder_path'     =>  'required'
         ]);
+        
+        if(!empty($request->file('folder_path'))) 
+        {
+            $file = $request->file('folder_path');
+            // $filename = $file->getClientOriginalName();
+            $filename = base64_encode($file);
+            $path = $file->storeAs('public', $filename);
+
+            $customer = new apiCustomer([
+                'customer_title'    =>  $request->get('customer_title'),
+                'customer_fullname'     =>  $request->get('customer_fullname'),
+                'customer_phonenumber'     =>  $request->get('customer_phonenumber'),
+                'email'     =>  $request->get('email'),
+                'baht'     =>  $request->get('baht'),
+                'customer_company'     =>  $request->get('customer_company'),
+                'customer_detail'     =>  $request->get('customer_detail'),
+                'folder_path'     =>  $filename 
+            ]);
+        }
+        else 
+        {
         $customer = new apiCustomer([
             'customer_title'    =>  $request->get('customer_title'),
             'customer_fullname'     =>  $request->get('customer_fullname'),
@@ -35,19 +58,13 @@ class ContactController extends Controller
             'baht'     =>  $request->get('baht'),
             'customer_company'     =>  $request->get('customer_company'),
             'customer_detail'     =>  $request->get('customer_detail'),
-            // 'folder_path'     =>  $request->get('folder_path')
+            // 'folder_path'     =>  $filename 
         ]);
-            // $customer->customer_title = $request->input('customer_title');
-            // $customer->customer_fullname = $request->input('customer_fullname');
-            // $customer->customer_phonenumber = $request->input('customer_phonenumber');
-            // $customer->email = $request->input('email');
-            // $customer->baht = $request->input('baht');
-            // $customer->customer_company = $request->input('customer_company');
-            // $customer->customer_detail = $request->input('customer_detail');
-            // $customer->folder_path = $request->input('folder_path');
-
+        }
+            // $customer = lastest()->firstOrfail();
+            
             $customer->save();
-            return redirect()->back()->with('success', 'Data Added');
+            return redirect('/contact')->with('success', 'ดำเนินการเรียบร้อยแล้ว');
 
     }
 }

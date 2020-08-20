@@ -210,8 +210,18 @@
                         <div class="blog-grid">
                             <div class="blog-img">
                                 <div class="date">
-                                    <span>{{$i->knowledge_created_at}}</span>
-                                    <label>FEB</label>
+                                    <span>
+                                        <?php 
+                                    $timestmap = $i->knowledge_created_at;
+                                    $date = date("j",strtotime($timestmap));
+                                    echo $date;
+                                    ?>
+                                    </span>
+                                    <label>
+                                        <?php
+                                    $timestmaps = $i->knowledge_created_at;
+                                    $moth =date("M",strtotime($timestmaps)); 
+                                    echo $moth?></label>
                                 </div>
                                 <a href="{{url('knowledge',['knowledge'=> $i->id])}}">
                                     <img src="{{asset('img/blog/pexels-6187.jpg')}}" title="" alt="">

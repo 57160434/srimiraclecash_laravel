@@ -1,4 +1,5 @@
 <?php
+use RealRashid\SweetAlert\Facades\Alert;
 
 Route::get('/', 'FrontController@index');
 // Route::get('/','FrontController@listing');

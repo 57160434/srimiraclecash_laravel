@@ -1,4 +1,10 @@
 @extends('layouts.admindefault')
+
+@section('title')
+SEO list
+@endsection
+
+
 @section('content')
 <div class="container-fluid">
     <div class="row">
@@ -9,12 +15,12 @@
     <div class="dropdown-divider "></div>
     <div class="col-12 col-md-12" style="background-color: #e8e8e8;">
         <div class="row">
-        <div class="col-12">
-            <span class="float-right">
-                <a href="#" type="button" class="btn btn-success text-light">Save</a>
-                <a href="{{url('admin/seo')}}" type="button" class="btn btn-danger text-light">Cancel</a>
-            </span>
-        </div>
+            <div class="col-12">
+                <span class="float-right">
+                    <a href="#" type="button" class="btn btn-success text-light">Save</a>
+                    <a href="{{url('admin/seo')}}" type="button" class="btn btn-danger text-light">Cancel</a>
+                </span>
+            </div>
             <div class="col-12">
                 <form class="item form-group form-horizontal">
                     <ul class="nav nav-tabs mb-1">
@@ -29,6 +35,34 @@
                     <div class="tab-content">
                         <div id="index" class="tab-pane fade in active">
                             <div class="row">
+                                @for($i =1 ; $i<=1; $i++)
+                                    @foreach($seopage as $seo)
+                                <div class="col-md-2 col-sm-12 mb-1">
+                                    <label class="control-label " for="knowledgeMetaTitle">Meta Title</label>
+                                </div>
+                                <div class="col-md-10 col-sm-12">
+                                    <input class="form-control input-lg" id="knowledgeMetaTitle"
+                                        value="{{ $seo->metatitle}}" type="text">
+                                </div>
+                                <div class="col-md-2 col-sm-12 mb-1">
+                                    <label class="control-label " for="knowledgeMetaDescription">Meta
+                                        Description</label>
+                                </div>
+                                <div class="col-md-10 col-sm-12">
+                                    <input class="form-control input-lg" id="knowledgeMetaDescription" type="text">
+                                </div>
+                                <div class="col-md-2 col-sm-12 mb-1">
+                                    <label class="control-label " for="knowledgeMetaKeyword">Meta Keyword </label>
+                                </div>
+                                <div class="col-md-10 col-sm-12">
+                                    <input class="form-control input-lg" id="knowledgeMetaKeyword" type="text">
+                                </div>
+                                @endforeach
+                                @endfor
+                            </div>
+                        </div>
+                        <div id="customer" class="tab-pane fade">
+                            <div class="row">
                                 <div class="col-md-2 col-sm-12 mb-1">
                                     <label class="control-label " for="knowledgeMetaTitle">Meta Title</label>
                                 </div>
@@ -36,35 +70,14 @@
                                     <input class="form-control input-lg" id="knowledgeMetaTitle" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaDescription">Meta Description</label>
+                                    <label class="control-label " for="knowledgeMetaDescription">Meta
+                                        Description</label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaDescription" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaKeyword">Meta Keyword </label>
-                                </div>
-                                <div class="col-md-10 col-sm-12">
-                                    <input class="form-control input-lg" id="knowledgeMetaKeyword" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="customer" class="tab-pane fade">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaTitle">Meta Title</label>
-                                </div>
-                                <div class="col-md-10 col-sm-12">
-                                    <input class="form-control input-lg" id="knowledgeMetaTitle" type="text">
-                                </div>
-                                <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaDescription">Meta Description</label>
-                                </div>
-                                <div class="col-md-10 col-sm-12">
-                                    <input class="form-control input-lg" id="knowledgeMetaDescription" type="text">
-                                </div>
-                                <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaKeyword">Meta Keyword </label>
+                                    <label class="control-label " for="knowledgeMetaKeyword">Meta Keyword </label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaKeyword" type="text">
@@ -74,19 +87,20 @@
                         <div id="service" class="tab-pane fade">
                             <div class="row">
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaTitle">Meta Title</label>
+                                    <label class="control-label " for="knowledgeMetaTitle">Meta Title</label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaTitle" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaDescription">Meta Description</label>
+                                    <label class="control-label " for="knowledgeMetaDescription">Meta
+                                        Description</label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaDescription" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaKeyword">Meta Keyword </label>
+                                    <label class="control-label " for="knowledgeMetaKeyword">Meta Keyword </label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaKeyword" type="text">
@@ -96,19 +110,20 @@
                         <div id="article" class="tab-pane fade">
                             <div class="row">
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaTitle">Meta Title</label>
+                                    <label class="control-label " for="knowledgeMetaTitle">Meta Title</label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaTitle" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaDescription">Meta Description</label>
+                                    <label class="control-label " for="knowledgeMetaDescription">Meta
+                                        Description</label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaDescription" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaKeyword">Meta Keyword </label>
+                                    <label class="control-label " for="knowledgeMetaKeyword">Meta Keyword </label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaKeyword" type="text">
@@ -118,19 +133,20 @@
                         <div id="document" class="tab-pane fade">
                             <div class="row">
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaTitle">Meta Title</label>
+                                    <label class="control-label " for="knowledgeMetaTitle">Meta Title</label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaTitle" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaDescription">Meta Description</label>
+                                    <label class="control-label " for="knowledgeMetaDescription">Meta
+                                        Description</label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaDescription" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaKeyword">Meta Keyword </label>
+                                    <label class="control-label " for="knowledgeMetaKeyword">Meta Keyword </label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaKeyword" type="text">
@@ -140,19 +156,20 @@
                         <div id="contact" class="tab-pane fade">
                             <div class="row">
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaTitle">Meta Title</label>
+                                    <label class="control-label " for="knowledgeMetaTitle">Meta Title</label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaTitle" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaDescription">Meta Description</label>
+                                    <label class="control-label " for="knowledgeMetaDescription">Meta
+                                        Description</label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaDescription" type="text">
                                 </div>
                                 <div class="col-md-2 col-sm-12 mb-1">
-                                    <label class="control-label "for="knowledgeMetaKeyword">Meta Keyword </label>
+                                    <label class="control-label " for="knowledgeMetaKeyword">Meta Keyword </label>
                                 </div>
                                 <div class="col-md-10 col-sm-12">
                                     <input class="form-control input-lg" id="knowledgeMetaKeyword" type="text">

@@ -4,12 +4,14 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Seopage;
 
 class SeoController extends Controller
 {
     //
     function listing()
     {
-        return view('Backend.Seo.seo');
+        $seopage = Seopage::all();
+        return view('Backend.Seo.seo',compact('seopage'));
     }
 }

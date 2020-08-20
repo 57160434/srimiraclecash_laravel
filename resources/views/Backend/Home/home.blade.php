@@ -1,4 +1,9 @@
 @extends('layouts.admindefault')
+
+@section('title')
+Dashboard
+@endsection
 @section('content')
-dasdasdasd
+Dashboard
+@endsection
 @stop

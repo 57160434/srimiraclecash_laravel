@@ -1,4 +1,7 @@
 @extends('layouts.admindefault')
+@section('title')
+Knowledge list
+@endsection
 @section('content')
 <div class="container-fluid">
     <div class="row">

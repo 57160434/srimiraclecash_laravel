@@ -3,9 +3,10 @@
 
 <head>
     @include('includes.head')
-
 </head>
-
+@section('title')
+Admin | Srimiracle
+@endsection
 <body>
 
     @if(isset(Auth::user()->email))
@@ -42,11 +43,11 @@
                                     @endforeach
                                 </ul>
                             </div>
-                            @else 
-                            <div class="alert alert-success">
-                                <p>Session::get('success')</p>
-                            </div>
                             @endif
+
+                            <!-- <div class="alert alert-success">
+                                <p>Session::get('success')</p>
+                            </div> -->
                             <form action="{{url('/admin/checklogin')}}" method="post">
                                 {{ csrf_field() }}
                                 <div class="form-group">
