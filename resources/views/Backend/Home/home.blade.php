@@ -5,5 +5,4 @@ Dashboard
 @endsection
 @section('content')
 Dashboard
-@endsection
 @stop

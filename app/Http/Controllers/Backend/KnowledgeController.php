@@ -41,6 +41,7 @@ class KnowledgeController extends Controller
     }
     function create()
     {
+        
         return view('Backend.Knowledge.knowledgecreate');
     }
     function edit()

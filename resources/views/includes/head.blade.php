@@ -7,15 +7,14 @@
 
 <title> @yield('title')</title>
 <meta name="description" content="@yield('description')">
-<meta name="keywords" content="@yield('keyword')">
+<meta name="keyword" content="@yield('keyword')">
 
 <!-- <title>Cash Services | MiracleCash</title> -->
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
 @yield('link')
 <!-- Fonts -->
-
+@yield('script')
 <!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">

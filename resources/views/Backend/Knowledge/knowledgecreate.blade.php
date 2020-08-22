@@ -1,9 +1,11 @@
 @extends('layouts.admindefault')
 @section('script')
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel=”stylesheet”>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
-<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js" defer></script>
 @endsection
 
 @section('title')
@@ -84,16 +86,16 @@ Create New Knowledge
                                 <div class="col-md-2 col-sm-12 mb-1 ">
                                     <label class="control-label" for="knowledgeDatail">Datail</label>
                                 </div>
-                                <div class="col-md-6 col-sm-12">
+                                <div class="col-md-10 col-sm-12">
                                     <form action="#" method="POST">
                                         {{ csrf_field() }}
-                                        <textarea name="messageInput" class="summernote"></textarea>
-                                        <!-- <button type="submit" class="btn btn-primary">Comment</button> -->
+                                        <textarea name="messageInput" class="summernote"rows="30"></textarea>
+                                        <br>
                                     </form>
                                 </div>
-                                <div class="col-md-4 col-sm-12">
+                                <!-- <div class="col-md-4 col-sm-12">
                                     <label class="control-label "></label>
-                                </div>
+                                </div> -->
                                 <div class="col-md-2 col-sm-12 mb-1  ">
                                     <label class="control-label" for="image">Gallery<span
                                             class="required">*</span></label>
