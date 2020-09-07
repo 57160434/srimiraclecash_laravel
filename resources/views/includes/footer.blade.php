@@ -52,7 +52,7 @@
                             <div class="col-12 d-flex align-items-center justify-content-center mb-2">
                                 <div class="d-flex align-items-center justify-content-center" data-toggle="modal"
                                     data-target="#exampleModal" style="cursor: pointer;">
-                                    <a href="http://line.me/ti/p/~0802808185" class="text-white" target="_black">
+                                    <a href="http://line.me/ti/p/~miraclecashservice" class="text-white" target="_black">
                                         <img src="{{asset('img/icon/line.png')}}" class="rounded-circle"
                                             style="width: 80px; border: 2px solid #fff;" alt="">
                                     </a>
@@ -60,7 +60,7 @@
                             </div>
                             <div class="col-12 text-center mt-0">
                                 <h4 class="text-white">Line</h4>
-                                <a href="http://line.me/ti/p/~0802808185" target="_black">
+                                <a href="http://line.me/ti/p/~miraclecashservice" target="_black">
                                     <p style="color: #fff; font-size: 15px;">0802808185</p>
                                 </a>
                             </div>
@@ -105,9 +105,9 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <h4 class=" font-prompt mb-4  text-light" style="font-weight: 400;">ติดต่อทางไลน์</h4>
-                <a href="http://line.me/ti/p/~0802808185" target="_blank">
+                <a href="http://line.me/ti/p/~miraclecashservice" target="_blank">  
                     <div class="mt-4">
-                        <img src="{{asset('img/icon/srimiracle_line.png')}}" class="w-50" alt="">
+                        <img src="{{asset('img/icon/srimiracleline.jpg')}}" class="w-50" alt="">
                     </div>
                 </a>
             </div>
@@ -151,20 +151,20 @@
     <div class="row text-center">
         <div class="col-3">
             <a href="tel:080 494 1445" style="font-size: 12px; color: #000;"><img class="rounded-circle"
-                    src="{{asset('img/icon/tel.png')}}" style="width: 40px; border: 2px solid #fff;" alt=""></a>
+                    src="{{asset('img/icon/tel.png')}}" style="width: 40px; border: 2px solid #fff;" alt="tel_miraclecashservice"></a>
         </div>
         <div class="col-3">
             <a href="srimiraclecash99@gmail.com" style="font-size: 12px; color: #000;"><img class="rounded-circle"
-                    src="{{asset('img/icon/email.png')}}" style="width: 40px; border: 2px solid #fff;" alt=""></a>
+                    src="{{asset('img/icon/email.png')}}" style="width: 40px; border: 2px solid #fff;" alt="email_miraclecashservice"></a>
         </div>
         <div class="col-3">
-            <a href="http://line.me/ti/p/~0934941445" style="font-size: 12px; color: #000;"><img class="rounded-circle"
-                    src="{{asset('img/icon/line.png')}}" style="width: 40px; border: 2px solid #fff;" alt=""></a>
+            <a href="http://line.me/ti/p/~miraclecashservice" style="font-size: 12px; color: #000;"><img class="rounded-circle"
+                    src="{{asset('img/icon/line.png')}}" style="width: 40px; border: 2px solid #fff;" alt="line_miraclecashservice"></a>
         </div>
         <div class="col-3">
-            <a href="https://www.facebook.com/thanetcash99" style="font-size: 12px; color: #000;"><img
+            <a href="https://www.facebook.com/srimiraclecash" style="font-size: 12px; color: #000;"><img
                     class="rounded-circle" src="{{asset('img/icon/facebook.png')}}"
-                    style="width: 40px; border: 2px solid #fff;" alt=""></a>
+                    style="width: 40px; border: 2px solid #fff;" alt="facebook_miraclecashservice"></a>
         </div>
     </div>
 </div>

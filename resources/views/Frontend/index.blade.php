@@ -175,22 +175,22 @@
                         <div class="carousel-item active ">
                             <img src="{{ asset('img/slider/slide1.jpg')}}" class="d-block w-100 " alt="..." />
                             <div class="carousel-caption ">
-                                <h5>First slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h3>ธุรกิจค้าส่ง</h3>
+                                <p>ไม่ว่าจะเป็นสินค้าสำหรับอุปโภคบริโภค ยา เสื้อผ้าวัตถุดิบที่ใช้ในการผลิต วัตถุดิบสำหรับโรงงานอุตสาหกรรม บรรจุภัณฑ์ ฯลฯ</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="{{ asset('img/slider/slide2.jpg')}}" class="d-block w-100" alt="..." />
                             <div class="carousel-caption ">
-                                <h5>Second slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h3>ธุรกิจแปรรูป</h3>
+                                <p>แปรรูปสินค้าต่างๆ เช่น เหล็กเส้น น้ำมันเชื้อเพลิง ถ่านหิน อาหาร เสื้อผ้า วัตถุดิบทางการเกษตร การประมง ฯลฯ</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="{{ asset('img/slider/slide3.jpg')}}" class="d-block w-100" alt="..." />
                             <div class="carousel-caption ">
-                                <h5>Third slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h3>ธุรกิจขนส่ง</h3>
+                                <p>การขนส่งสินค้าอุปโภคและบริโภค ผลิตผลทางการเกษตร สินค้าอุตสาหกรรม วัตถุอันตราย สินค้าเฉพาะ ฯลฯ</p>
                             </div>
                         </div>
                     </div>
@@ -239,7 +239,7 @@
                                 <p class="text-length">{{$i->knowledge_description}}</p>
                                 <div class="btn-bar">
                                     <a href="{{url('knowledge',['knowledge'=> $i->id])}}" class="px-btn-arrow">
-                                        <span>Read More</span>
+                                        <span>อ่านเพิ่มเติม</span>
                                         <i class="arrow"></i>
                                     </a>
                                 </div>

@@ -104,7 +104,7 @@
                                             required=""></textarea>
                                     </div>
                                 </div>
-                                <div class="col-12 py-2 px-2">
+                                <!-- <div class="col-12 py-2 px-2">
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="folder_path"
                                             name="folder_path">
@@ -112,7 +112,7 @@
                                             </label>
                                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="col-12 py-2 px-2">
                                     <div class="form-group row mb-0">
                                         <div class="col-sm-10">
