@@ -16,17 +16,43 @@
 @endforeach
 
 @section('content')
-
 <div id="carouselBannerFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="{{ asset('img/slider/slide1.jpg')}}" class="d-block w-100" alt="...">
+            <div class="d-none d-sm-block">
+                <div class="carousel-caption  d-md-block" style="margin-top:10%;">
+                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:5rem;">
+                    บริการทุนสำรองฉุกเฉินเพื่อเสริมสภาพคล่อง</h1>
+                    <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:3rem;">
+                        <u>เรืองฤทธิ์</u> เงินด่วน 1
+                        ชม.รู้ผล</h2>
+                </div>
+            </div>
         </div>
         <div class="carousel-item">
             <img src="{{ asset('img/slider/slide2.jpg')}}" class="d-block w-100" alt="...">
+            <div class="d-none d-sm-block">
+                <div class="carousel-caption  d-md-block" style="margin-top:10%;">
+                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:5rem;">
+                        เงินด่วนอนุมัติเร็วถึงที่</h1>
+                    <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:3rem;">
+                        <u>เรืองฤทธิ์</u> เงินด่วน 1
+                        ชม.รู้ผล</h2>
+                </div>
+            </div>
         </div>
         <div class="carousel-item">
             <img src="{{ asset('img/slider/slide3.jpg')}}" class="d-block w-100" alt="...">
+            <div class="d-none d-sm-block">
+                <div class="carousel-caption  d-md-block" style="margin-top:10%;">
+                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:5rem;">
+                        เงินด่วนอนุมัติเร็วถึงที่</h1>
+                    <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:3rem;">
+                        <u>เรืองฤทธิ์</u> เงินด่วน 1
+                        ชม.รู้ผล</h2>
+                </div>
+            </div>
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselBannerFade" role="button" data-slide="prev">
@@ -176,21 +202,24 @@
                             <img src="{{ asset('img/slider/slide1.jpg')}}" class="d-block w-100 " alt="..." />
                             <div class="carousel-caption ">
                                 <h3>ธุรกิจค้าส่ง</h3>
-                                <p>ไม่ว่าจะเป็นสินค้าสำหรับอุปโภคบริโภค ยา เสื้อผ้าวัตถุดิบที่ใช้ในการผลิต วัตถุดิบสำหรับโรงงานอุตสาหกรรม บรรจุภัณฑ์ ฯลฯ</p>
+                                <p>ไม่ว่าจะเป็นสินค้าสำหรับอุปโภคบริโภค ยา เสื้อผ้าวัตถุดิบที่ใช้ในการผลิต
+                                    วัตถุดิบสำหรับโรงงานอุตสาหกรรม บรรจุภัณฑ์ ฯลฯ</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="{{ asset('img/slider/slide2.jpg')}}" class="d-block w-100" alt="..." />
                             <div class="carousel-caption ">
                                 <h3>ธุรกิจแปรรูป</h3>
-                                <p>แปรรูปสินค้าต่างๆ เช่น เหล็กเส้น น้ำมันเชื้อเพลิง ถ่านหิน อาหาร เสื้อผ้า วัตถุดิบทางการเกษตร การประมง ฯลฯ</p>
+                                <p>แปรรูปสินค้าต่างๆ เช่น เหล็กเส้น น้ำมันเชื้อเพลิง ถ่านหิน อาหาร เสื้อผ้า
+                                    วัตถุดิบทางการเกษตร การประมง ฯลฯ</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="{{ asset('img/slider/slide3.jpg')}}" class="d-block w-100" alt="..." />
                             <div class="carousel-caption ">
                                 <h3>ธุรกิจขนส่ง</h3>
-                                <p>การขนส่งสินค้าอุปโภคและบริโภค ผลิตผลทางการเกษตร สินค้าอุตสาหกรรม วัตถุอันตราย สินค้าเฉพาะ ฯลฯ</p>
+                                <p>การขนส่งสินค้าอุปโภคและบริโภค ผลิตผลทางการเกษตร สินค้าอุตสาหกรรม วัตถุอันตราย
+                                    สินค้าเฉพาะ ฯลฯ</p>
                             </div>
                         </div>
                     </div>
