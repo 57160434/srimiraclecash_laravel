@@ -117,7 +117,7 @@
                                     <div class="form-group row mb-0">
                                         <div class="col-sm-10">
                                             <button type="submit" id="btn_submit" name="btn_submit"
-                                                class="btn bg-primary text-white"
+                                                class="btn bg-danger text-white"
                                                 style="cursor: pointer;">ส่งข้อความ</button>
                                         </div>
                                     </div>
@@ -127,10 +127,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-12 col-lg-4 text-light bg-info">
+            <div class="col-12 col-md-12 col-lg-4 text-light bg-danger">
                 <div class="row">
                     <div class="col-12 text-center mt-4">
-                        <h3>ศรี-บริการสินเชื่อเงินทุนหมุนเวียน</h3>
+                        <h3>เอเชียแคลช-บริการสินเชื่อเงินทุนหมุนเวียน</h3>
                     </div>
                     <div class="col-12 mt-2">
                         <p class="mb-2 text-white text-16px"><i class="fa fa-check-square-o" aria-hidden="true"></i>
@@ -156,27 +156,27 @@
 
                     <div class="col-12 mt-4">
                         <p class="mb-2 text-white" style="font-size: 16px;">
-                            <a href="tel:080 280 8185" class="text-white">
+                            <a href="tel:091 790 9847" class="text-white">
                                 <img src="{{asset('img/icon/tel.png')}}" class="rounded-circle"
-                                    style="width: 24px; border: 2px solid #fff;" alt=""> : 080 280 8185
+                                    style="width: 24px; border: 2px solid #fff;" alt=""> : 091 790 9847
                             </a>
                         </p>
                         <p class="mb-2 text-white" style="font-size: 16px;">
-                            <a href="mailto:srimiraclecash99@gmail.com" class="text-white">
+                            <a href="mailto:Arthikub@gmail.com" class="text-white">
                                 <img src="{{asset('img/icon/email.png')}}" class="rounded-circle"
-                                    style="width: 24px; border: 2px solid #fff;" alt=""> : srimiraclecash99@gmail.com
+                                    style="width: 24px; border: 2px solid #fff;" alt=""> : Arthikub@gmail.com
                             </a>
                         </p>
                         <p class="mb-2 text-white" style="font-size: 16px;">
-                            <a class="text-white" href="http://line.me/ti/p/~srimiraclecashservice" target="_blank">
+                            <a class="text-white" href="http://line.me/ti/p/~0917909847" target="_blank">
                                 <img src="{{asset('img/icon/line.png')}}" class="rounded-circle"
-                                    style="width: 24px; border: 2px solid #fff;" alt=""> : srimiraclecashservice
+                                    style="width: 24px; border: 2px solid #fff;" alt=""> : 0917909847
                             </a>
                         </p>
                         <p class="mb-2 text-white" style="font-size: 16px;">
-                            <a href="https://www.facebook.com/srimiraclecash" target="_blank" class="text-white">
+                            <a href="https://www.facebook.com/AsiaCashs-106924107710256" target="_blank" class="text-white">
                                 <img src="{{asset('img/icon/facebook.png')}}" class="rounded-circle"
-                                    style="width: 24px; border: 2px solid #fff;" alt=""> : srimiraclecash
+                                    style="width: 24px; border: 2px solid #fff;" alt=""> : Asia Cashs
                             </a>
                         </p>
                     </div>

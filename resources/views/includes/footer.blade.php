@@ -1,7 +1,7 @@
 <!-- <div id="copyright text-right">© Copyright 2017 Saquib Rizwan </div> -->
 <!-- <div style="padding :20px"></div> -->
 
-<div class="section-page-6 d-md-block d-none bg-info">
+<div class="section-page-6 d-md-block d-none bg-danger">
 
     <div style="padding :20px"></div>
     <div class="container">
@@ -10,11 +10,11 @@
             <div class="col-12 col-md-12 col-lg-6">
                 <div class="row">
                     <div class="col-12 col-md-6 mb-4">
-                        <div class="row m-0 pt-4 bg-primary" style="border-radius: 5px;">
+                        <div class="row m-0 pt-4" style="border-radius: 5px;background-color: #C62B27!important;">
                             <div class="col-12 d-flex align-items-center justify-content-center mb-2">
                                 <div class="d-flex align-items-center justify-content-center" data-toggle="modal"
                                     data-target="#exampleModal" style="cursor: pointer;">
-                                    <a href="tel:080 280 8185" class="text-white">
+                                    <a href="tel:091 790 9847" class="text-white">
                                         <img src="{{asset('img/icon/tel.png')}}" class="rounded-circle"
                                             style="width: 80px; border: 2px solid #fff;" alt="">
                                     </a>
@@ -22,18 +22,18 @@
                             </div>
                             <div class="col-12 text-center mt-0">
                                 <h4 class="text-white">Call</h4>
-                                <a href="tel:080 280 8185" target="_black">
-                                    <p style="color: #fff; font-size: 15px;">080 280 8185</p>
+                                <a href="tel:091 790 9847" target="_black">
+                                    <p style="color: #fff; font-size: 15px;">0917909847</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 mb-4">
-                        <div class="row m-0 pt-4 bg-primary" style="border-radius: 5px;">
+                        <div class="row m-0 pt-4" style="border-radius: 5px;background-color: #C62B27!important;">
                             <div class="col-12 d-flex align-items-center justify-content-center mb-2">
                                 <div class="d-flex align-items-center justify-content-center" data-toggle="modal"
                                     data-target="#exampleModal" style="cursor: pointer;">
-                                    <a href="mailto:srimiracle99@gmail.com" class="text-white">
+                                    <a href="mailto:Arthikub@gmail.com" class="text-white">
                                         <img src="{{asset('img/icon/email.png')}}" class="rounded-circle"
                                             style="width: 80px; border: 2px solid #fff;" alt="">
                                     </a>
@@ -41,14 +41,14 @@
                             </div>
                             <div class="col-12 text-center mt-0">
                                 <h4 class="text-white">Email</h4>
-                                <a href="mailto:srimiracle99@gmail.com" target="_black">
-                                    <p style="color: #fff; font-size: 15px;">srimiracle99@gmail.com</p>
+                                <a href="mailto:Arthikub@gmail.com" target="_black">
+                                    <p style="color: #fff; font-size: 15px;">Arthikub@gmail.com</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 mb-4">
-                        <div class="row m-0 pt-4 bg-primary" style="border-radius: 5px;">
+                        <div class="row m-0 pt-4" style="border-radius: 5px;background-color: #C62B27!important;">
                             <div class="col-12 d-flex align-items-center justify-content-center mb-2">
                                 <div class="d-flex align-items-center justify-content-center" data-toggle="modal"
                                     data-target="#exampleModal" style="cursor: pointer;">
@@ -60,14 +60,14 @@
                             </div>
                             <div class="col-12 text-center mt-0">
                                 <h4 class="text-white">Line</h4>
-                                <a href="http://line.me/ti/p/~miraclecashservice" target="_black">
-                                    <p style="color: #fff; font-size: 15px;">0802808185</p>
+                                <a href="http://line.me/ti/p/~0917909847" target="_black">
+                                    <p style="color: #fff; font-size: 15px;">0917909847</p>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 mb-4">
-                        <div class="row m-0 pt-4 bg-primary" style="border-radius: 5px;">
+                        <div class="row m-0 pt-4" style="border-radius: 5px;background-color: #C62B27!important;">
                             <div class="col-12 d-flex align-items-center justify-content-center mb-2">
                                 <div class="d-flex align-items-center justify-content-center" data-toggle="modal"
                                     data-target="#exampleModal" style="cursor: pointer;">
@@ -79,8 +79,8 @@
                             </div>
                             <div class="col-12 text-center mt-0">
                                 <h4 class="text-white">Facebook</h4>
-                                <a href="https://www.facebook.com/srimiraclecash" target="_black">
-                                    <p style="color: #fff; font-size: 15px;">Srimiraclecash</p>
+                                <a href="https://www.facebook.com/AsiaCashs-106924107710256" target="_black">
+                                    <p style="color: #fff; font-size: 15px;">Asia Cashs</p>
                                 </a>
                             </div>
                         </div>
@@ -105,23 +105,23 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <h4 class=" font-prompt mb-4  text-light" style="font-weight: 400;">ติดต่อทางไลน์</h4>
-                <a href="http://line.me/ti/p/~miraclecashservice" target="_blank">  
+                <a href="http://line.me/ti/p/~0917909847" target="_blank">  
                     <div class="mt-4">
-                        <img src="{{asset('img/icon/srimiracleline.jpg')}}" class="w-50" alt="">
+                        <img src="{{asset('img/icon/asiacashs.jpg')}}" class="w-50" alt="">
                     </div>
                 </a>
             </div>
         </div>
     </div>
 </div>
-<div class="bg-footer-text bg-info">
+<div class="bg-footer-text bg-danger">
     <div class="container">
         <div class="row">
             <div>
                 <marquee class="pt-1" behavior="scroll" direction="left" onmouseover="this.stop();"
                     onmouseout="this.start();">
                     <p class="mb-0" style="color: #fff; font-size: 16px;">
-                        บริษัท ศรี จำกัด ยินดีบริการ เงินด่วน สินเชื่อเงินด่วนอนุมัติเร็ว เงินกู้ เงินทุนหมุนเวียน
+                        บริษัท เอเชียแคลช จำกัด ยินดีบริการ เงินด่วน สินเชื่อเงินด่วนอนุมัติเร็ว เงินกู้ เงินทุนหมุนเวียน
                         สินเชื่อหมุนเวียน สินเชื่อสำหรับผู้ประกอบการ สำหรับเจ้าของกิจการ เสริมสภาพคล่อง
                         ให้ธุรกิจเดินหน้าอย่างราบรื่น ธุรกิจเติบโตด้วยเงินทุนหมุนเวียนเพื่อธุรกิจ อนุมัติไว
                         วงเงินอนุมัติสูงสุด 5,000,000 บาท ดอกเบี้ยแบบลดต้นลดดอก ไม่ต้องมีหลักทรัพย์ หรือบุคคลค้ำประกัน
@@ -131,14 +131,14 @@
         </div>
     </div>
 </div>
-<footer class="footer-area text-white bg-info">
+<footer class="footer-area text-white bg-danger">
     <div class="copywrite-area">
         <div class="container">
             <div class="copywrite-text">
                 <div class="row align-items-center">
                     <div class="col-md-12 text-center text-md-left">
                         <p class="p-text " style="font-size: 16px !important; ">
-                            ©2020 บริษัท ศรี จำกัด สงวนไว้ซึ่งสิทธิ์ทั้งหมด
+                            ©2020 บริษัท เอเชียแคลช จำกัด สงวนไว้ซึ่งสิทธิ์ทั้งหมด
                         </p>
                     </div>
                 </div>
@@ -146,15 +146,15 @@
         </div>
     </div>
 </footer>
-<div class="d-md-none bg-info"style="margin-bottom:40px;"></div>
-<div class="container-fluid d-md-none d-block py-2 fixed-bottom shadow-lg  bg-info" >
+<div class="d-md-none bg-danger"style="margin-bottom:40px;"></div>
+<div class="container-fluid d-md-none d-block py-2 fixed-bottom shadow-lg  bg-danger" >
     <div class="row text-center">
         <div class="col-3">
-            <a href="tel:080 494 1445" style="font-size: 12px; color: #000;"><img class="rounded-circle"
+            <a href="tel:091 790 9847" style="font-size: 12px; color: #000;"><img class="rounded-circle"
                     src="{{asset('img/icon/tel.png')}}" style="width: 40px; border: 2px solid #fff;" alt="tel_miraclecashservice"></a>
         </div>
         <div class="col-3">
-            <a href="srimiraclecash99@gmail.com" style="font-size: 12px; color: #000;"><img class="rounded-circle"
+            <a href="Arthikub@gmail.com" style="font-size: 12px; color: #000;"><img class="rounded-circle"
                     src="{{asset('img/icon/email.png')}}" style="width: 40px; border: 2px solid #fff;" alt="email_miraclecashservice"></a>
         </div>
         <div class="col-3">

@@ -17,40 +17,40 @@
 
 @section('content')
 <div id="carouselBannerFade" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
+    <div class="carousel-inner">-
         <div class="carousel-item active">
-            <img src="{{ asset('img/slider/slide1.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/slider/slide1.jpg')}}"style="opacity:90%;" class="d-block w-100" alt="...">
             <div class="d-none d-sm-block">
-                <div class="carousel-caption  d-md-block" style="margin-top:10%;">
-                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:5rem;">
-                    บริการทุนสำรองฉุกเฉินเพื่อเสริมสภาพคล่อง</h1>
-                    <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:3rem;">
-                        <u>เรืองฤทธิ์</u> เงินด่วน 1
-                        ชม.รู้ผล</h2>
+                <div class="carousel-caption  d-md-block" style="margin-top:20%;">
+                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:3rem;">
+                    <b>บริการทุนสำรองฉุกเฉินเพื่อเสริมสภาพคล่อง</b></h1>
+                    <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:2rem;">
+                        <b>เอเชีย แคลช เงินด่วน 1
+                        ชม.รู้ผล</b></h2>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <img src="{{ asset('img/slider/slide2.jpg')}}" class="d-block w-100" alt="...">
             <div class="d-none d-sm-block">
-                <div class="carousel-caption  d-md-block" style="margin-top:10%;">
-                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:5rem;">
-                        เงินด่วนอนุมัติเร็วถึงที่</h1>
-                    <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:3rem;">
-                        <u>เรืองฤทธิ์</u> เงินด่วน 1
-                        ชม.รู้ผล</h2>
+                <div class="carousel-caption  d-md-block" style="margin-top:20%;">
+                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:3rem;">
+                    <b>บริการทุนสำรองฉุกเฉินเพื่อเสริมสภาพคล่อง</b></h1>
+                    <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:2rem;">
+                        <b>เอเชีย แคลช</u> เงินด่วน 1
+                        ชม.รู้ผล</b></h2>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <img src="{{ asset('img/slider/slide3.jpg')}}" class="d-block w-100" alt="...">
             <div class="d-none d-sm-block">
-                <div class="carousel-caption  d-md-block" style="margin-top:10%;">
-                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:5rem;">
-                        เงินด่วนอนุมัติเร็วถึงที่</h1>
-                    <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:3rem;">
-                        <u>เรืองฤทธิ์</u> เงินด่วน 1
-                        ชม.รู้ผล</h2>
+                <div class="carousel-caption  d-md-block" style="margin-top:20%;">
+                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:3rem;">
+                    <b>บริการทุนสำรองฉุกเฉินเพื่อเสริมสภาพคล่อง</b></h1>
+                    <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:2rem;">
+                        <b>เอเชีย แคลช เงินด่วน 1
+                        ชม.รู้ผล</b></h2>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
 <!--start-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 section-page-1 bg-aboutus bg-info text-light">
+        <div class="col-12 section-page-1 bg-aboutus bg-danger text-light">
             <div class="container">
                 <div class="col-md-12 text-center">
                     <h1>เกี่ยวกับเรา</h1>
@@ -94,7 +94,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-6 text-center widget-wrap">
                 <div style="padding:0px 0px 20px 0px">
-                    <h1>เกี่ยวกับ ศรีมิราเคิล</h1>
+                    <h1>เกี่ยวกับ เอเชียแคลช</h1>
                 </div>
             </div>
             <div class="col-md-8 col-sm-6">
@@ -110,10 +110,10 @@
 </div>
 
 <!-- start reason page -->
-<div class="text-center bg-info text-light">
+<div class="text-center bg-danger text-light">
     <div style="padding: 30px 0px">
         <div class="col-12 ">
-            <h1 style="padding:0px 0px 20px 0px">เหตุผลที่ต้องเลือกบริการ ศรีมิราเคิล</h1>
+            <h1 style="padding:0px 0px 20px 0px">เหตุผลที่ต้องเลือกบริการ เอเชียแคลช</h1>
         </div>
         <div class="container">
             <div class="row">
@@ -176,14 +176,14 @@
             </div>
             <div class="col-12 text-center">
                 <a href="{{url('/document')}}" type="button"
-                    class="btn btn-danger text-light rounded-pill btn-lg">อ่านรายละเอียดเพิ่มเติม</a>
+                    class="btn btn-info text-light rounded-pill btn-lg">อ่านรายละเอียดเพิ่มเติม</a>
             </div>
         </div>
     </div>
 </div>
 <div style="padding : 0px 0px 40px 0px;">
     <div class="container-fluid">
-        <div class="row bg-info">
+        <div class="row bg-danger">
             <div class="col-md-3 col-sm-12 text-center text-white widget-wrap">
                 <h2><b>กลุ่มลูกค้าธุรกิจของเรา</b>​</h2>
                 <div style="padding:20px">

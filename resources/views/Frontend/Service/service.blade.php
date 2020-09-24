@@ -22,65 +22,52 @@
             <div class="col-md-12 section-page-4">
                 <h3 class="font-prompt"><i class="fas fa-donate ore"></i> บริการ</h3>
                 <hr class="w-100 border-main"><br />
-                <h4 class="font-prompt mb-2">บริการของเรามีอะไรบ้าง</h4>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    บริการสินเชื่อเพิ่อธุกิจ เงินทุนเพื่อธุรกิจ เงินด่วนสำหรับผู้ประกอบการ
+                <h4 class="font-prompt mb-2 text-danger"><b><u>บริการของเรามีอะไรบ้าง</u></b></h4>
+               <p style="font-size: 18px;">
+                        <li>บริการสินเชื่อเพิ่อธุกิจ เงินทุนเพื่อธุรกิจ เงินด่วนสำหรับผู้ประกอบการ
                     ที่ต้องการเสริมสภาพคล่องทางการเงินขยายกิจการหรือใช้ในการหมุนเวียนภายในองค์กร
+                    </li></p>
+
+                <h4 class="font-prompt mb-2 text-danger"><b><u>คุณสมบัติผู้กู้</u></b></h4>
+                <p style="font-size: 18px;">
+                <li>มีกิจการเป็นของตนเอง</li>
+                </p>
+                <p style="font-size: 18px;">
+                <li>มีใบจดทะเบียนประกอบการหรือหนังสือรับรองบริษัทเป็นชื่อของตนเอง</li>
+                </p>
+                <p style="font-size: 18px;">
+                <li>มีแหล่งที่อยู่ที่สามารถติดต่อได้ทั้งที่บ้านและที่ทำงาน</li>
                 </p>
 
-                <h4 class="font-prompt mb-2">คุณสมบัติผู้กู้</h4>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    มีกิจการเป็นของตนเอง
+                <h4 class="font-prompt mb-2 text-danger"><b><u>ข้อดีของเรา</u></b></h4>
+                <p style="font-size: 18px;">
+                <li>อนุมัติไว ภายใน 1 ชั่วโมง</li>
                 </p>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    มีใบจดทะเบียนประกอบการหรือหนังสือรับรองบริษัทเป็นชื่อของตนเอง
+                <p style="font-size: 18px;">
+                <li>ไม่เช็คเครดิต ติดแบล็คลิสไม่ใช่ปัญหา</li>
                 </p>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    มีแหล่งที่อยู่ที่สามารถติดต่อได้ทั้งที่บ้านและที่ทำงาน
+                <p style="font-size: 18px;">
+                <li>สะดวก ง่าย ไม่ยุ่งยาก</li>
                 </p>
-
-                <h4 class="font-prompt mb-2">ข้อดีของเรา</h4>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    อนุมัติไว ภายใน 1 ชั่วโมง
-                </p>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    ไม่เช็คเครดิต ติดแบล็คลิสไม่ใช่ปัญหา
-                </p>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    สะดวก ง่าย ไม่ยุ่งยาก
-                </p>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    วงเงินอนุมัติสูงสุด 5,000,000 บาท
+                <p style="font-size: 18px;">
+                <li>วงเงินอนุมัติสูงสุด 5,000,000 บาท</li>
                 </p>
 
-                <h4 class="font-prompt mb-2">เอกสารเบื้องต้นในการขอกู้เงิน</h4>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    สำเนาบัตรประชาชน
+                <h4 class="font-prompt mb-2 text-danger"><b><u>เอกสารเบื้องต้นในการขอกู้เงิน</u></b></h4>
+                <p style="font-size: 18px;">
+                <li>สำเนาบัตรประชาชน</li>
                 </p>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    สำเนาทะเบียนบ้าน
+                <p style="font-size: 18px;">
+                <li>สำเนาทะเบียนบ้าน</li>
                 </p>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    ใบประกอบการกิจการ
+                <p style="font-size: 18px;">
+                <li>ใบประกอบการกิจการ</li>
                 </p>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    เอกสารสัญญาเช่า (ถ้ามี)
+                <p style="font-size: 18px;">
+                <li>เอกสารสัญญาเช่า (ถ้ามี)</li>
                 </p>
-                <p style="font-size: 18px;"><img src="#" alt=""
-                        style="width: 40px; padding-right: 10px;">
-                    สเตทเม้นท์ย้อนหลัง 3 เดือน
+                <p style="font-size: 18px;">
+                <li>สเตทเม้นท์ย้อนหลัง 3 เดือน</li>
                 </p>
 
             </div>
