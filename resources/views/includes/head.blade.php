@@ -3,7 +3,7 @@
 
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<link rel="shortcut icon" href="{{asset('img/icon/srimiracle_fav.png')}}" />
+<link rel="shortcut icon" href="{{asset('img/icon/logo_asiacashs.jpg')}}" />
 
 <title> @yield('title')</title>
 <meta name="description" content="@yield('description')">

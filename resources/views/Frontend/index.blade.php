@@ -16,36 +16,36 @@
 @endforeach
 
 @section('content')
+<div class="d-none d-sm-block" style="padding:20px;"></div>
+<div class="d-sm-none d-block" style="padding:30px;"></div>
 <div id="carouselBannerFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">-
         <div class="carousel-item active">
-            <img src="{{ asset('img/slider/slide1.jpg')}}"style="opacity:90%;" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/banner/banner_marketing.jpg')}}" class="d-block w-100" alt="...">
             <div class="d-none d-sm-block">
-                <div class="carousel-caption  d-md-block" style="margin-top:20%;">
+                <div class="carousel-caption  d-md-block" style="margin-top:12%;">
                     <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:3rem;">
-                    <b>บริการทุนสำรองฉุกเฉินเพื่อเสริมสภาพคล่อง</b></h1>
+                    <b>บริการทุนสำรองเพื่อเสริมสภาพคล่องทางการเงินของท่าน</b></h1>
                     <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:2rem;">
-                        <b>เอเชีย แคลช เงินด่วน 1
-                        ชม.รู้ผล</b></h2>
+                        <b>เอเชีย แคลช เงินด่วน</b></h2>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('img/slider/slide2.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/banner/banner_otp.jpg')}}" class="d-block w-100" alt="...">
             <div class="d-none d-sm-block">
-                <div class="carousel-caption  d-md-block" style="margin-top:20%;">
+                <div class="carousel-caption  d-md-block" style="margin-top:12%;">
                     <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:3rem;">
-                    <b>บริการทุนสำรองฉุกเฉินเพื่อเสริมสภาพคล่อง</b></h1>
+                    <b>การจัดหาเทคนิคการช่วยเหลือสนับสนุน</b></h1>
                     <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:2rem;">
-                        <b>เอเชีย แคลช</u> เงินด่วน 1
-                        ชม.รู้ผล</b></h2>
+                        <b>ด้วยพนักงานมืออาชีพ</u> เข้าใจในปัญหาของคุณ</b></h2>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('img/slider/slide3.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/banner/banner_tracking.jpg')}}"class="d-block w-100" alt="...">
             <div class="d-none d-sm-block">
-                <div class="carousel-caption  d-md-block" style="margin-top:20%;">
+                <div class="carousel-caption  d-md-block" style="margin-top:12%;">
                     <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:3rem;">
                     <b>บริการทุนสำรองฉุกเฉินเพื่อเสริมสภาพคล่อง</b></h1>
                     <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:2rem;">
