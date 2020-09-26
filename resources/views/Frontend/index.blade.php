@@ -21,10 +21,10 @@
 <div id="carouselBannerFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">-
         <div class="carousel-item active">
-            <img src="{{ asset('img/banner/banner_marketing.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/banner/banner_marketing.jpg')}}" class="d-block w-100" alt="banner_marketing" style="filter: brightness(50%);">
             <div class="d-none d-sm-block">
                 <div class="carousel-caption  d-md-block" style="margin-top:12%;">
-                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:3rem;">
+                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:2.9rem;">
                     <b>บริการทุนสำรองเพื่อเสริมสภาพคล่องทางการเงินของท่าน</b></h1>
                     <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:2rem;">
                         <b>เอเชีย แคลช เงินด่วน</b></h2>
@@ -32,10 +32,10 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('img/banner/banner_otp.jpg')}}" class="d-block w-100" alt="...">
+            <img src="{{ asset('img/banner/banner_otp.jpg')}}" class="d-block w-100" alt="banner_otp" style="filter: brightness(50%);">
             <div class="d-none d-sm-block">
                 <div class="carousel-caption  d-md-block" style="margin-top:12%;">
-                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:3rem;">
+                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:2.9rem;">
                     <b>การจัดหาเทคนิคการช่วยเหลือสนับสนุน</b></h1>
                     <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:2rem;">
                         <b>ด้วยพนักงานมืออาชีพ</u> เข้าใจในปัญหาของคุณ</b></h2>
@@ -43,10 +43,10 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('img/banner/banner_tracking.jpg')}}"class="d-block w-100" alt="...">
+            <img src="{{ asset('img/banner/banner_tracking.jpg')}}"class="d-block w-100" alt="banner_tracking"style="filter: brightness(50%);">
             <div class="d-none d-sm-block">
                 <div class="carousel-caption  d-md-block" style="margin-top:12%;">
-                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:3rem;">
+                    <h1 data-animation="animated zoomInLeft" class="animated zoomInLeft" style="font-size:2.9rem;">
                     <b>บริการทุนสำรองฉุกเฉินเพื่อเสริมสภาพคล่อง</b></h1>
                     <h2 data-animation="animated fadeInRight" class="animated fadeInRight" style="font-size:2rem;">
                         <b>เอเชีย แคลช เงินด่วน 1
@@ -191,7 +191,7 @@
                 </div>
             </div>
             <div class=" col-md-9 col-sm-12 bg-white" style="padding : 0px 1px 0px 0px;">
-                <div id="carouselcustomer" class="carousel carousel-fixed slide carousel-fade" data-ride="carousel">
+                <div id="carouselcustomer" class="carousel carousel-fixed slide carousel-fade" data-ride="carousel" >
                     <ol class="carousel-indicators">
                         <li data-target="#carouselcustomer" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselcustomer" data-slide-to="1"></li>
@@ -199,7 +199,7 @@
                     </ol>
                     <div class="carousel-inner fixed-height">
                         <div class="carousel-item active ">
-                            <img src="{{ asset('img/slider/slide1.jpg')}}" class="d-block w-100 " alt="..." />
+                            <img src="{{ asset('img/banner/asiacash1.jpg')}}" class="d-block w-100 " alt="asiacash1" style="filter: brightness(50%);"/>
                             <div class="carousel-caption ">
                                 <h3>ธุรกิจค้าส่ง</h3>
                                 <p>ไม่ว่าจะเป็นสินค้าสำหรับอุปโภคบริโภค ยา เสื้อผ้าวัตถุดิบที่ใช้ในการผลิต
@@ -207,7 +207,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('img/slider/slide2.jpg')}}" class="d-block w-100" alt="..." />
+                            <img src="{{ asset('img/banner/asiacash2.jpg')}}" class="d-block w-100" alt="asiacash2" style="filter: brightness(50%);"/>
                             <div class="carousel-caption ">
                                 <h3>ธุรกิจแปรรูป</h3>
                                 <p>แปรรูปสินค้าต่างๆ เช่น เหล็กเส้น น้ำมันเชื้อเพลิง ถ่านหิน อาหาร เสื้อผ้า
@@ -215,7 +215,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{ asset('img/slider/slide3.jpg')}}" class="d-block w-100" alt="..." />
+                            <img src="{{ asset('img/banner/asiacash3.jpg')}}" class="d-block w-100" alt="asiacash3" style="filter: brightness(50%);"/>
                             <div class="carousel-caption ">
                                 <h3>ธุรกิจขนส่ง</h3>
                                 <p>การขนส่งสินค้าอุปโภคและบริโภค ผลิตผลทางการเกษตร สินค้าอุตสาหกรรม วัตถุอันตราย

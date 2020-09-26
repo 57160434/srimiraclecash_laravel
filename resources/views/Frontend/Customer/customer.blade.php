@@ -16,7 +16,7 @@
 
 <div style="padding:100px 0px 100px">
     <div style="padding:0px 0px 40px">
-        <img class="img-fluid" src="{{asset('img/banner/srimiracle_banner.png')}}" />
+        <img class="img-fluid" src="{{asset('img/banner/blog1.jpg')}}" style="max-height: 400px;width:100%"/>
     </div>
     <div class="container">
         <div class="row">

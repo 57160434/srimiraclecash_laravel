@@ -17,7 +17,7 @@
 @endsection
 @section('content')
 <div style="padding:100px 0px 40px">
-    <img class="img-fluid" src="{{asset('img/banner/srimiracle_banner.png')}}" />
+<img class="img-fluid" src="{{asset('img/banner/blog3.jpg')}}" style="max-height: 400px;width:100%"/>
 </div>
 <div style="padding:0px 0px 80px 0px">
     <div class="container-fluid">

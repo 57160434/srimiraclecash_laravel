@@ -15,7 +15,7 @@
 @section('content')
 <div style="padding:100px 0px 0px">
     <div style="padding:0px 0px 40px">
-        <img class="img-fluid" src="{{asset('img/banner/srimiracle_banner.png')}}" />
+        <img class="img-fluid" src="{{asset('img/banner/blog4.jpg')}}" style="max-height:width:100%;filter:brightness(50%)" />
     </div>
     <div class="container">
         <div class="row _mb-60">
@@ -25,9 +25,9 @@
                 <hr class="w-100 border-main">
                 <div class=""></div><br>
             </div>
-                @if(count($errors) > 0)
-                        <?php  Alert::error('Something went wrong',$errors->all());?>
-                @endif
+            @if(count($errors) > 0)
+            <?php  Alert::error('Something went wrong',$errors->all());?>
+            @endif
             <div class="col-12 col-md-12 col-lg-8" style="background-color: #e8e8e8;">
                 <div class="row">
                     <div class="col-12">
@@ -80,8 +80,7 @@
                                         </div>
                                         <input type="number" class="form-control" id="baht" name="baht" maxlength="10"
                                             placeholder="จำนวนเงินที่ต้องการกู้ *" style="border: unset;" required=""
-                                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                            />
+                                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 py-2 px-2">
@@ -174,7 +173,8 @@
                             </a>
                         </p>
                         <p class="mb-2 text-white" style="font-size: 16px;">
-                            <a href="https://www.facebook.com/AsiaCashs-106924107710256" target="_blank" class="text-white">
+                            <a href="https://www.facebook.com/AsiaCashs-106924107710256" target="_blank"
+                                class="text-white">
                                 <img src="{{asset('img/icon/facebook.png')}}" class="rounded-circle"
                                     style="width: 24px; border: 2px solid #fff;" alt=""> : Asia Cashs
                             </a>
